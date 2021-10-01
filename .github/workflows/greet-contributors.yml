@@ -1,0 +1,16 @@
+
+name: "GreetContributor"
+on:
+  pull_request:
+    types: [opened,synchronize]
+    
+jobs:
+  GreetCommitter:    
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Greet contributor"
+      uses: ibakshay/greet-contributors-action@v3
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with: 
+        content: "Thank you for taking your time and effort for your contribution, we truly value it. :tada: <br><br> With Regards<br>Ritek Rounak<br>Head of Technical Support, BlackTimber Labs"
