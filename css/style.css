@@ -28,8 +28,8 @@ nav.navbar {
   align-items: center;
   justify-content: center;
   border-bottom: 0.1px solid rgb(85, 85, 85);
-  border-radius: 100px;
-  margin-top: 10px;
+  border-radius: 0px;
+  margin-top: 0px;
 }
 
 nav.navbar a.navbar-brand {
@@ -106,7 +106,7 @@ div.content button.btn1 {
   margin-top: 10px;
   padding: 6px 15px;
   background: none;
-  border: 3px solid white;
+  border: 1px solid white;
   border-radius: 25px;
   color: white;
   transition: all 0.4s ease-in;
@@ -116,7 +116,7 @@ div.content button.btn1 {
 div.content button.btn1:hover,
 div.content button.btn1:active {
   background-color: white;
-  border: 3px solid #b300ff;
+  border: 1px solid #b300ff;
   color: #b300ff;
   cursor: pointer;
   transition: all 0.4s ease-in;
