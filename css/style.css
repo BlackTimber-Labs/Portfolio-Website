@@ -28,6 +28,8 @@ nav.navbar {
   align-items: center;
   justify-content: center;
   border-bottom: 0.1px solid rgb(85, 85, 85);
+  border-radius: 100px;
+  margin-top: 10px;
 }
 
 nav.navbar a.navbar-brand {
