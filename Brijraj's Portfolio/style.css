@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    scroll-padding-top: 60px;
+}
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: 20px 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: rgba(0, 0, 00, 0.7);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.brand {
+    font-size: 1.5rem;
+    color: #363636;
+}
+
+.fixed-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.name {
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.home-container {
+    background: #32a8c8;
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.introduction {
+    min-height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.socials {
+    padding: 3rem;
+}
+
+.socialicons {
+    color: #ffffff;
+}
+
+.socialicons,
+.socialicons:hover {
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.8s;
+    margin: 4px;
+}
+
+.socialicons:hover {
+    color: #000;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+.about {
+    max-height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "img title"
+        "img intro"
+        "img resume-btn";
+}
+.about-container {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+}
+.title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    grid-area: title;
+}
+.intro {
+    color: #343a40;
+    text-align: center;
+    font-size: 20px;
+    grid-area: intro;
+}
+.dp {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+}
+.dp img {
+    height: 300px;
+    border-radius: 100%;
+}
+.resume-btn-container {
+    display: flex;
+    justify-content: center;
+}
+.resume-btn {
+    margin-top: 30px;
+    border: 1px solid #343a40;
+    border-radius: 10px;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    grid-area: btn;
+}
+.resume-btn:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+.projects-container {
+    background-color: #f8f9fa;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 3rem;
+}
+
+.projects-container .title {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.card {
+    box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.25);
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 250px;
+    margin: 10px;
+    color: black;
+    background-color: white;
+    transition: all 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.project-title {
+    padding: 10px;
+    height: 20%;
+    font-size: 18px;
+    color: white;
+    border-bottom: solid 4px #32a8c8;
+    background-color: #343a40;
+    text-align: center;
+}
+.project-info {
+    padding: 0 20px;
+    font-size: 1.1rem;
+}
+.github {
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 0;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid #343a40;
+    border-radius: 10px;
+}
+.github:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+.skills-container {
+    background-color: #fff;
+    /* min-height: 100vh; */
+    padding-bottom: 50px;
+}
+
+.skills-container .title {
+    margin-top: 2rem;
+    font-style: 4rem;
+    font-weight: 300;
+}
+
+.skills {
+    margin-top: 2rem;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.skill-bar {
+    width: 80%;
+}
+
+.skill-bar .skill-name {
+    color: #212529;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+progress[value] {
+    width: 100%;
+    height: 30px;
+}
+
+.contact-me {
+    min-height: 300px;
+    background-color: #f5f5f5;
+    color: #212529;
+    padding: 40px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-me .title {
+    font-style: 4rem;
+    font-weight: 300;
+}
+
+.contact-me .info {
+    max-width: 90%;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.contact-me .credits {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .home-container {
+        padding: 0 10px;
+    }
+
+    .home-container .name {
+        font-size: 3rem;
+    }
+
+    .introduction {
+        font-size: 0.8rem;
+    }
+
+    .socials {
+        padding: 1rem;
+    }
+
+    .socials a i {
+        font-size: 2.2rem;
+    }
+
+    .about {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "intro"
+            "resume-btn";
+    }
+    .about .title {
+        margin-bottom: 1rem;
+    }
+    .dp {
+        display: none;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .intro {
+        font-size: 15px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contact-me {
+        margin-top: 2rem;
+    }
+    .contact-me .credits {
+        text-align: center;
+    }
+}
