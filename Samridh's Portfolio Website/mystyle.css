@@ -1,0 +1,194 @@
+
+/* :root{
+    --ff-primary: 'Urbanist', sans-serif;
+    --ff-secondary:  'Urbanist', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: white;
+    --clr-dark: black;
+
+    --fs
+
+} */
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.nav{
+    color: white;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+ul.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a.nav_item:hover{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+li.frontText{
+    font-size: 50px;
+    display: flex;
+    align-self: center;
+    padding-bottom: 0;
+    margin: 0;
+    border: 0 black;
+}
+
+
+/* dynamic text */
+
+section.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    display: inline-flex;
+    
+}
+
+.wrapper .dynamic-text{
+    margin-left: 15px;
+    line-height: 80px;
+    height: 70px;
+    overflow: hidden;
+}
+
+
+
+.dynamic-text li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    color: white;
+    animation: slide 8s steps(4) infinite;
+}
+.dynamic-text li span{
+    position: relative;
+}
+
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+    animation: typing 2s steps(10) infinite;
+
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -45px 0 45px;
+    }
+}
+
+@keyframes slide {
+    100%{
+        top: -340px;
+    }
+}
+
+li.frontTextSam{
+    font-size: 50px;
+}
+
+section.intro{
+    text-align: center;
+}
+
+
+/* About Me */
+
+section.aboutme{
+    background-image: url("about me.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+h2.aboutme-ki-heading{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+div.projects{
+    background-repeat: no-repeat;
+    margin: 10 10;
+    height: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: auto;
+    
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  h1#someOfMyProjects,h2#followMeHere{
+      text-align: center;
+      justify-content: center;
+  }
+
+
+
+  div.socialIcons{
+      display: flex;
+      justify-content: space-evenly;
+      
+  }
+
+  .fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
