@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  text-align: center;
+  color: #40514E;
+}
+
+.intro {
+  line-height: 2;
+  width: 40%;
+  margin: auto;
+}
+
+.top-container {
+  background-color: #DEEEEA;
+  padding-top: 55px;
+  position: relative;
+}
+
+.middle-container {}
+
+h1 {
+  margin: 30px auto 0;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-family: 'Amatic SC', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Amatic SC', cursive;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a:hover{
+    color: #EAF6F6;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+  font-weight: normal;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px;
+  text-align: left;
+  line-height: 2;
+}
+
+.comp-1 {
+  width: 25%;
+  border-radius: 20%;
+  float: left;
+  margin-right: 80px;
+
+}
+
+
+hr {
+  border-style: dotted;
+  border-width: 5px 0 0;
+  width: 4%;
+  color: #EAF6F6;
+  margin:50px auto;/* border: dotted #dsxsa _px;    border-bottom:none; margin: 100px auto; */
+}
+
+.comp-2 {
+  width: 25%;
+  border-radius: 20%;
+  float: right;
+  margin-left: 30px;
+}
+
+.top-cloud {
+  position: relative;
+  left: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+}
+
+.profile-p {
+  margin-top: 50px;
+  height: 200px;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  height: 120px;
+  position: relative;
+}
+
+.btn {
+  -webkit-border-radius: 44px;
+  -moz-border-radius: 44px;
+  border-radius: 44px;
+  height: 0;
+  line-height: 0;
+  color: #FFFFFF;
+  font-family: 'Amatic SC', cursive;
+  width: 120px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 20px;
+  background-color: #66BFBF;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.btn:hover {
+  background: #3CACB9;
+  border: solid #337FED 0;
+  -webkit-border-radius: 51px;
+  -moz-border-radius: 51px;
+  border-radius: 51px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #EAF6F6;
+  position: absolute;
+  bottom: 5px;
+  left: 530px;
+  right: auto;
+  font-size: 13px;   /* 0.75 REM WOULD ALSO DO*/
+}
+
+.links {
+  position: absolute;
+  top: 30px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.contact-me {
+  line-height: 60px;
+}
