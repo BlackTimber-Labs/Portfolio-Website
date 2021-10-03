@@ -1,0 +1,12 @@
+@media (min-width:180px) and (max-width:820px){
+    
+    .mainContainerCenter {
+        width: 100%;
+        margin: 300px auto;
+    }
+
+    .companyLogo img{
+        width: 100%;
+    }
+
+}
