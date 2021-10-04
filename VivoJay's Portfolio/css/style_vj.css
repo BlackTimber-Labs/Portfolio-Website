@@ -188,6 +188,7 @@ section.services div.three {
 section.services div.three h2 {
     font-size: 42px;
     font-family: 'Josefin Sans', sans-serif;
+    padding-top: 40px;
 }
 section.services div.three h4 {
     margin-top: 60px;
@@ -213,12 +214,12 @@ section.services div.five i {
     font-size: 40px;
     margin-bottom: 30px;
     padding: 30px 30px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
     border-radius: 51px;
 }
 section.services div.five i:hover {
     background-color: #24C5FF;
-    border: 2px solid black;
+    border: 4px solid black;
     cursor: pointer;
     transition: all 0.2s ease-in;
 }
@@ -286,14 +287,15 @@ section.skills div.container ul {
 }
 section.skills div.container ul li.list-group-item {
     display: flex;
-    width: 50%;
+    width: 60%;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(146, 145, 145);
-    border-bottom: 0;
+    border: 4px solid rgb(146, 145, 145);
     border-radius: 15px;
     background-color: rgba(255, 0, 154, 0.2);
     color: white;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
 }
 section.skills div.container ul li.last {
     border-bottom: 2px solid rgb(146, 145, 145);
@@ -389,17 +391,20 @@ section.contact div.container form {
     justify-content: center;
 }
 section.contact div.container input, section.contact div.container textarea {
-    width: 50%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+    margin-top: 0px;
     background: none;
-    padding: 5px 10px;
+    padding: 10px 20px 30px 20px;
     outline: none;
     font-size: 18px;
-    border: 0px solid grey;
-    border-bottom: 2px solid rgb(248, 161, 0);
+    border: none;
+    border-radius: 5px;
+    border-bottom: 4px solid #F4D8BA;
     color: white;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: transparent; */
+    backdrop-filter: blur(55px);
     font-weight: 500;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
