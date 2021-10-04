@@ -1,0 +1,174 @@
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #E8F6EF;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+h1{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 3em;
+  
+}
+h2{
+  font-weight: bold;
+  
+}
+@media (min-width: 900px) {
+  h2{
+  
+    font-size: 3rem;
+    letter-spacing: 0.37rem;
+    margin: auto auto 50px auto;
+  }
+  h3{
+    color: #ddd;
+    font-size: 2em;
+    letter-spacing: 0.37em;
+    margin: auto auto 50px auto;
+  }
+  
+}
+
+
+
+
+footer{
+  
+  padding: 5%;
+  background-color: rgb(24, 24, 24);
+  color: #ddd;
+}
+
+.navbar a:hover{
+  color: black;
+
+}
+/*-------------------------------------------------------------- top div --------------------------------------------------------------------*/
+
+.top{
+  margin: 10px;
+  padding: 10%;
+  text-align: left;
+  
+}
+
+.top img{
+  height: 350px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 100%;
+ 
+} 
+@media(min-width:900px){
+  .top img{
+    position: relative;
+    left: 55%;
+    bottom: 20%;
+  }
+}
+/*
+
+  */
+.top p{
+  color: #7E7474;
+  line-height: 2;
+  
+}
+
+.top a{
+  color: black;
+  text-decoration: none;
+  margin-top:30px;  
+}
+.top a:hover{
+  color: #7E7474;
+}
+
+.top hr{
+  width: 25%;
+  height: 1.3px;
+  background-color: black;
+  margin-left: 0;
+  padding-left: 10px;
+}
+  
+/*---------------------------------------------------------- MIDDLE SECTION---------------------------------------------------------------------*/
+.middle{
+  background-color: rgba(131, 122, 122, 0.37);
+  padding: 5%;
+  margin: 0 auto 100px auto;
+ 
+}
+
+.institute {
+  font-weight: bold;
+}
+
+.row{
+  margin: 5px;
+  padding: 10px;
+}
+
+
+/*------------------------------------------------------------- SKILLS SECTION-----------------------------------------------------------------*/
+
+.skills{
+  padding: 5%;
+  margin: 100px auto 100px auto;
+}
+
+.skills img{
+  height: 150px;
+  width: 150px; 
+  margin: 20px;
+
+}
+
+.skills-img{
+  margin: 100px auto 100px auto;
+  padding: 20px 0 20px 0;
+}
+
+.lang{
+  font-size: 1.5rem;
+}
+
+.slider{
+  width: 100%;
+  background-color: #ddd;
+}
+.slider-percentage{
+  background-color: rgb(51, 49, 49);
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+.english{width: 90%; }
+.bengali{ width: 60%;}
+.hindi{width: 40%;}
+
+#projects{
+  background-color: rgba(131, 122, 122, 0.37);
+  padding: 5%;
+  margin: 0 auto 100px auto;
+ 
+}
+/* -----------------------------------------------------------------------CONTACT ------------------------------------------------------------*/
+
+.contactme{
+  padding: 15px 0 200px;
+  
+}
+.contactme a{
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.contactme a:hover{
+  color: #7E7474;
+}
