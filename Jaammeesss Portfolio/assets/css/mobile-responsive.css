@@ -1,0 +1,119 @@
+@media (min-width:368px) and (max-width:799px) {
+    .nav-logo {
+        display: none;
+    }
+    .nav-info {
+        width: 100%;
+    }
+    .nav-menu {
+        width: 100%;
+    }
+    .nav-contact-info {
+        display: none;
+    }
+    nav {
+        background-color: transparent;
+        height: auto;
+        width: 100%;
+        float: left;
+        position: none;
+    }
+    .header-background-image {
+        position: relative;
+    }
+    .burger-nav {
+        display: block;
+        height: 60px;
+        width: 100%;
+        background: url(../images/burger.png) no-repeat center center;
+        background-color: #e30613;
+        cursor: pointer;
+    }
+    header nav ul {
+        overflow: hidden;
+        background-color: #e30613;
+        height: 0;
+    }
+    header nav ul.open {
+        height: auto;
+    }
+    header nav ul li {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        display: block;
+        margin: 0;
+        height: 40px;
+    }
+    .nav-menu li:hover {
+        color: #ffffff;
+        transform: none;
+        transition-duration: none;
+    }
+    header nav ul li a {
+        width: 100%;
+    }
+    .about-us-center {
+        width: 90%;
+    }
+    .skills-center {
+        width: 90%;
+    }
+    .portfolio-center {
+        width: 90%;
+    }
+    .footer-center {
+        width: 90%;
+    }
+    .footer-copyright-center {
+        width: 90%;
+    }
+    .portfolio-holder {
+        clear: both;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    .footer-content p {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media (min-width:368px) and (max-width:500px) {
+
+    .skills-content ul {
+        margin-bottom: 10px;
+    }
+
+    .skills-list {
+        width: 100%;
+    }
+
+    .left-skills {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .right-skills {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+}
+
+
+

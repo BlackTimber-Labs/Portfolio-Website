@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mainContainer{
+    width: 100%;
+    float: left;
+}
+
+
+
+.mainContainerCenter {
+    width: 900px;
+    margin: 300px auto;
+}
+
+.mainContainerContent{
+    width: 100%;
+    float: left;
+}
+
+
+.companyLogo img{
+    width: 100%;
+}
+
+.linkImages{
+    width: 150px;
+    margin: 0 auto;
+}
