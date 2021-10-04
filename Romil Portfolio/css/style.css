@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    /* background: url(../images/banner.jpg); */
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    
+    
+    
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform:uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+section{
+    padding: 100px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+ header ul li a{
+     position: relative;
+     display: inline-block;
+     margin: 0 15px;
+     color: #fff;
+     text-decoration: none;
+ }  
+ header ul li a:hover{
+     color: rgb(52, 169, 199);
+ }
+ header.sticky ul li a{
+     color: #111;
+ }
+ header.sticky ul li a:hover{
+    color: rgb(52, 169, 199);
+}
+ .edu{
+     display: flex;
+     flex-direction: row;
+     margin-right: 175px;
+ }
+ .edu .img{
+     margin-right: auto;
+ }
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+} 
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+.contentBx{
+    padding-right: 30px;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.tools_skills{
+    background: #111;
+}
+.heading.white{
+    color: #fff;
+}
+.tools_skills .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.tools_skills .content .skillsbx{
+    padding: 40px 20px;
+    background-color: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.tools_skills .content .skillsbx:hover{
+    background-color:rgb(62, 62, 204);
+}
+/* .tools_skills .content .skillsbx img{
+    max-width: 80px;
+    
+} */
+
+.tools_skills .content .skillsbx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.projects .content{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.projects{
+    background-color: whitesmoke;
+}
+.projects .content h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+/* .projects .content .probx{
+    width: 50%;
+    padding: 20px;
+} */
+/* .projects .content .probx img{
+    max-width: 100%;
+} */
+
+
+/* Certifications */
+.certify{
+    background: #111;
+}
+.heading.white{
+    color: #fff;
+}
+.certify .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.certify .content .certifybx{
+    padding: 40px 20px;
+    background-color: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.certify .content .certifybx p{
+    /* padding: 40px 20px; */
+    background-color: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.certify .content .certifybx2{
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 20px;
+    background-color:#222;
+}
+
+.certify .content .certifybx3{
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 20px;
+    background-color:#222;
+}
+
+.certify .content .certifybx4{
+    padding: 40px 20px;
+    max-width: 500px;
+    max-height: 1100px;
+    margin: 20px;
+    background-color:#222;
+}
+
+.other{
+    background: #111;
+}
+.other .heading h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.other .heading p{
+    font-style: italic;
+    margin-top: 10px;
+}
+ 
+.other .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.other .content .videoBx{
+    padding: 5px;
+    margin:2px;
+}
+
+.other .content .videoBx h2{
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1em;
+
+}
+.contact{
+    background: #111;
+    /* background-image: url(http://www.bauli-international.com/international/contacts/d-contacts.jpg); */
+}
+
+
+.formBx{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px; */
+    max-width: 60%;
+}
+
+
+.formBx form{
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+.formBx form h3,.contactInfo h3{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,textarea{
+    margin-bottom: 20px;
+    padding:15px;
+    font-size: 16px;
+    border:none;
+    outline: #222;
+    background-color: #222;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,textarea::placeholder{
+    color: #999;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo{
+    max-width: 40%;
+}
+.contactInfoBx{
+  position: relative;  
+}
+.contactInfoBx .box{
+    position: relative;
+    padding-bottom: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icons{
+    min-width: 40px;
+    padding-top: 4px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.contactInfoBx .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+/* #contact-box label{
+    font-size: 1.3rem;
+    font-family:  'Georama', sans-serif;
+} */
+
+.copyright{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.contentsocial{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.icon{
+    padding:5px;
+}
+

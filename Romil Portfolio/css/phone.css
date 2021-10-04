@@ -1,0 +1,118 @@
+header,
+header.sticky{
+    padding: 20px 50px;
+    z-index: 1000;
+}
+.menu{
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+
+}
+.menu.active{
+    left:0;
+}
+header ul li a{
+    color: #111;
+    font-size: 24px;
+    margin: 5px;
+}
+.toggle{
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:30px;
+    cursor: pointer;
+
+}
+.toggle.active{
+    background: url(../images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:25px;
+    cursor: pointer;
+}
+header.sticky .toggle{
+    filter: invert();
+}
+
+section{
+    padding: 100px 50px;
+}
+.banner{
+    padding: 150px 50px 100px;
+}
+.banner h2{
+    font-size: 1.5em;
+}
+.banner h3{
+    font-size: 1em;
+}
+.btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.heading h2{
+    font-size: 24px;
+}
+.contentBx h3{
+    font-size: 20px;
+}
+.content{
+    flex-direction: column;
+}
+.edu .img{
+    margin-top: 20px;
+    width: 300px;
+
+}
+.tools_skills .content .skillsbx
+{
+    margin:10px;
+}
+.projects .content .probx{
+    width: 100%;
+    padding: 10px;
+}
+.projects .content .probx h2{
+    text-align: left;
+}
+.certify .content .certifybx{
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+}
+.certify .content .certifybx h3{
+    margin-top: 20px;
+}
+.contactInfo{
+    margin-bottom: 20px 0;
+}
+.formBx form{
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 0%;
+    margin-top: 50px;
+}
+.banner img{
+    padding: 15px;
+    height: 300px;
+    width: 200px;
+}
+.other .content .videoBx iframe{
+    width :auto;
+    height: auto;
+}
