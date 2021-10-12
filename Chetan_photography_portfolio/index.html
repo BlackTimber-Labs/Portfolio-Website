@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Photographer Portfolio</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="left"></div>
+    <div class="right"></div>
+
+    <nav class="nav">
+      <ul>
+        <li class="logo"></li>
+        <li class="menu"><i class="fa fa-bars"></i></li>
+        <li class="Collection">collection</li>
+        <li class="Explore">explore</li>
+        <li class="search"></li>
+        <li class="profile">
+          <div class="img"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="img-wrapper">
+        <div class="chetan"></div>
+      </div>
+
+      <div class="info">
+        <ul>
+          <li></li>
+          <li>@chetannverma</li>
+          <li></li>
+          <li><i class="fa fa-share-alt"></i></li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h1>Chetan Verma</h1>
+         <p> Photographer</p>
+      </div>
+
+      <div class="name">Chetan Verma</div>
+
+      <div class="bottomnav">
+        <ul>
+          <li>profile</li>
+          <li>portfolio</li>
+          <li>contact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    TweenMax.to('.left', 2, {
+      delay: .8,
+      width: '50%',
+      ease: Power3.opacity
+    })
+
+    TweenMax.to('.right', 2, {
+      delay: .6,
+      width: '50%',
+      ease: Power3.opacity
+    })
+
+    TweenMax.from('.nav', 2, {
+      delay: .8,
+      opacity: 0,
+      ease: Expo.opacity
+    })
+
+    TweenMax.from('.text h1', 2, {
+      delay: .6,
+      x: 1000,
+      ease: Circ.opacity
+    })
+
+    TweenMax.from('.text p', 2, {
+      delay: .7,
+      x: 1000,
+      ease: Circ.opacity
+    })
+
+    TweenMax.to('.chetan', 2, {
+      delay: 1.5,
+      width: '800px',
+      ease: Power2.opacity
+    })
+
+    TweenMax.staggerFrom('.bottomnav ul li', 2, {
+      delay: 1,
+      x: 1000,
+      ease: Circ.opacity
+    }, 0.08)
+
+    TweenMax.from('.info', 2, {
+      delay: 1.5,
+      y: 100,
+      ease: Circ.opacity
+    })
+
+    TweenMax.from('.name', 2, {
+      delay: 1.5,
+      x: -600,
+      ease: Circ.opacity
+    })
+
+  </script>
+</body>
+
+</html>
