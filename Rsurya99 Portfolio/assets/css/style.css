@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* max-width: 100%; */
+    /* max-height: 100vh; */
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    padding: 15px 100px;
+    background-color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav .nav-link a{
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+nav .nav-link a:hover{
+    color: #fff;
+}
+
+nav .nav-link a.active{
+    color: #fff;
+}
+
+.landing{
+    width: 100%;
+    margin: 120px auto;
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing .bg-svg-1{
+    position: absolute;
+    width: 60%;
+    right: -34rem;
+    bottom: -30rem;
+    z-index: -1;
+    color: rgba(33, 150, 243, 0.3);
+    opacity: 0.2;
+    transform: rotate(20deg);
+}
+
+.landing .bg-svg-2{
+    position: absolute;
+    width: 60%;
+    left: -26rem;
+    top: -50rem;
+    z-index: -1;
+    color: rgba(33, 150, 243, 0.3);
+    opacity: 0.2;
+    transform: rotate(20deg);
+}
+
+.landing .profile{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating { 
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+} 
+@keyframes floating { 
+    0% { transform: translate(0, 0px); } 
+    50% { transform: translate(0, 8px); } 
+    100% { transform: translate(0, -0px); }  
+} 
+.floating-4 { 
+    animation-name: floating; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+} 
+@keyframes floating-4 { 
+    0% { transform: translate(0, 0px); } 
+    50% { transform: translate(0, 8px); } 
+    100% { transform: translate(0, -0px); }  
+}
+
+.landing .profile .circle-1{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background: #2ADEA2;
+    position: relative;
+    z-index: 20;
+    bottom: -13rem;
+    left: 2rem;
+}
+
+.landing .profile .circle-2{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background: #762ADE;
+    position: relative;
+    z-index: 20;
+    bottom: 12rem;
+    left: 0;
+}
+
+.landing .profile img{
+    width: 50%;
+    border-radius: 100%;
+    border: 2px solid #e5e7eb;
+    position: relative;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.landing .profile img:hover{
+    transform: translateY(-20px);
+}
+
+.landing .text-profile{
+    width: 50%;
+    overflow: hidden;
+}
+
+.landing .text-profile h5{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    line-height: 1.25;
+    color: #9ca3af;
+}
+
+.landing .text-profile h1{
+    margin: 20px 0;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #3b82f6;
+}
+
+.landing .text-profile p{
+    color: #6b7280;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+.landing .text-profile p a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #6b7280;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.landing .text-profile p a:hover{
+    color: #4b5563;
+}
+
+.landing .text-profile .btn{
+    padding: 0.5rem 1.5rem;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.landing .text-profile .btn:hover{
+    background: #2563eb;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.footer .footer-text{
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.footer .socials .icon{
+    color: #4b5563;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 15px;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+.footer .socials .icon:hover{
+    color: #374151;
+}
+
+@media (max-width: 1536px) { 
+    .landing{
+        margin: 100px auto;
+        padding: 0px 70px;
+    }
+
+    .landing .profile .circle-1{
+        width: 4rem;
+        height: 4rem;
+        bottom: -10rem;
+    }
+
+    .landing .profile .circle-2{
+        width: 3rem;
+        height: 3rem;
+        bottom: 9rem;
+    }
+
+    .landing .text-profile h5{
+        font-size: 1.2rem;
+    }
+
+    .landing .text-profile h1{
+        font-size: 2.4rem;
+    }
+
+    .landing .text-profile p{
+        font-size: 0.9rem;
+    }
+
+    .landing .text-profile .btn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 996px) {
+    nav .nav-link{
+        width: 50%;
+    }
+    .landing .profile .circle-1{
+        width: 3rem;
+        height: 3rem;
+        bottom: -8rem;
+    }
+
+    .landing .profile .circle-2{
+        width: 2rem;
+        height: 2rem;
+        bottom: 7rem;
+    }
+}
+
+@media (max-width: 786px){
+    nav .logo{
+        display: none;
+    }
+    nav .nav-link{
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    nav .nav-link{
+        display: none;
+    }
+    .landing{
+        flex-direction: column;
+        padding: 10px 20px;
+        margin: 30px auto;
+    }
+    .landing .profile .circle-1{
+        width: 2rem;
+        height: 2rem;
+        bottom: -8rem;
+    }
+
+    .landing .profile .circle-2{
+        bottom: 8rem;
+    }
+    .landing .profile{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .landing .text-profile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing .text-profile p{
+        text-align: center;
+        padding-right: 0;
+    }
+    .landing .text-profile .btn{
+        font-size: 0.9rem;
+    }
+    .footer{
+        margin-top: 70px;
+        padding: 0 30px;
+    }
+    .footer .footer-text{
+        font-size: 1rem;
+    }
+    .footer .socials .icon{
+        font-size: 1rem;
+    }
+}
