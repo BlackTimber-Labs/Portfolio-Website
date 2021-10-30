@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #111111;
+    --off-white: palegoldenrod;
+    --dark-gray: #F59E0B;
+    --link-hover: rgb(250, 176, 61);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    background-origin: shadow 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+   
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 3.5rem;
+    color: whitesmoke;
+
+}
+
+.link-secondary {
+    color: var(--primary-color);
+}
+
+.link-secondary:hover {
+    border-radius: 3.5rem ;
+    border: 2px solid var(--link-hover);
+     
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: rgb(192, 169, 120);
+    padding: 1rem 1rem;
+    border-bottom-left-radius: 1rem ;
+    border-bottom-right-radius:1rem ;
+} 
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .nav-pills {
+   text-align:right;
+}
+
+.navigation .link  {
+    color: rgb(192, 169, 120);
+}
+
+.navigation .link-active {  
+    font-weight: bold;
+}
+
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-img {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-highlight {
+    color: var(--primary-color);
+}
+
+/** section **/
+.section {
+    padding: 2rem;
+}
+
+.section h3 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--off-white);
+
+}
+
+/** footer **/
+.footer {
+    background-color: var(--primary-color);
+    padding: 1rem 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.footer .link {
+    color: rgb(192, 169, 120);
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+

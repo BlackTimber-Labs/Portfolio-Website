@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+   
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:  none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.logo img{
+    height:  45px;
+}
+
+nav ul{
+    display: flex ;
+}
+
+nav ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 3px; 
+    padding: 0px 22px;
+    display: flex;
+    font-size:  0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585b5b;
+    letter-spacing: 1px;
+}
+
+.hey{
+    color: #39bfbd;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #40c6c4;
+
+}
+
+nav ul li a:hover{
+    background-color: #2adabc;
+    color: #FFFFFF;
+    box-shadow:5px 10px 30px rgba(64, 198, 196, 0.3) ;    
+    transition: all ease 0.2s;
+}
+
+.model img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.model{
+    width: 500px;
+    height: 500px;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main-text{
+    width: 500px;
+}
+
+.main-text h1{
+    font-size: 3.5rem;
+    color: #1c3548;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+}
+
+.main-text p{
+    color: #747474;
+}
+
+.portfolio-btn{
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #1db096;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+
+.portfolio-btn:hover{
+    background-color: #23cdaf;
+    transition: all ease 0.2s;
+}
+
+#skills{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width:90%;
+	margin:auto auto 50px auto;
+}
+.skill-text{
+	width:400px;
+}
+.skill-img{
+	width:600px;
+	height: 600px;
+}
+.skill-img img{
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+}
+.skill-heading span{
+	color:#36b7b5;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+.skill-heading h2{
+	color: #1c3548;
+	font-size: 3.3rem;
+	margin:0px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.s-box-container{
+	margin-top: 30px;
+}
+.skill-box{
+	display: flex;
+	margin: 25px 0px;
+}
+.s-box-icon{
+	margin-right:12px;
+}
+.s-box-icon i{
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f0f0;
+	font-size: 1.1rem;
+}
+.s-box-text strong{
+	color:#1c3548;
+	margin: 0px;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+.s-box-text p{
+	color:#747474;
+	font-size: 0.9rem;
+}
+.fa-html5{
+	color:#e06061;
+}
+.fa-css3-alt{
+	color:#416cdf;
+}
+.fa-js-square{
+	color:#f98231;
+}   
+
+.fa-laptop-code{
+    color: #214abd;
+}
+.fa-java{
+    color: red;
+}
+
+.fa-python{
+    color: rgb(196, 196, 118);
+}
+
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    flex-direction: column;
+}
+
+.project-heading span, .about-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.project-heading h3, .about-heading h3{
+    color: #1c3548;
+    font-size: 3rem ;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#aboutme{
+    width: 100%;
+    border-top: 1px solid rgba(58,58,58,0.03);
+    border-bottom: 1px solid rgba(58,58,58,0.03);
+    padding: 50px 0px;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: 1000px;
+}
+
+.about-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.about-model{
+    width: 500px;
+    height: 500px;
+}
+.about-content{
+    width: 90%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+
+.about-text{
+    width: 500px;
+}
+
+/* FLIP CARD */
+
+.flip-card {
+    background-color: transparent;
+    width: 33%;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front img{
+      width: 100%;
+      height: 300px;
+  }
+  
+  .flip-card-front {
+    background-color: rgb(46, 44, 44);
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* ------------------------ */
+
+
+.footer{
+    display:flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgba(232,232,232,0.5);
+    border-top: 3px solid rgba(232,232,232,0.5);
+    background-color: #FFFFFF;
+}
+
+.footermessage{
+  text-align: center;
+  margin: auto;
+  color: #5f5f5f;
+  font-size: 1.4rem;
+}
+
+.footer a{
+   color: #16425B;
+}
+
+.footer{
+    width: 70%;
+    margin: auto;
+}
+
+.icon:hover{
+    transform: scale(1.5);
+}
+
+.gmail-icon:hover
+{
+    color: #f02a18;
+    
+}
+
+.instagram-icon:hover
+{
+    color: #C13584;
+}
+
+.linkedin-icon:hover
+{
+    color: #0e76a8;
+}
+
+.twitter-icon:hover
+{
+    color: #24b0f1;
+}
+
+.github-icon:hover
+{
+    color: #000000;
+}
+
+
+
+/* Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #04fcce;
+    border-radius: 7px;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #22cfb0;
+    border-radius: 7px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #207968;
+  }
+  

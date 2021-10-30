@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 180vh;
+    position: relative;
+    overflow-x: hidden;
+    background: url("https://images.unsplash.com/photo-1547082299-de196ea013d6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D")
+        no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    backdrop-filter: blur(5px) brightness(20%);
+}
+nav.navbar {
+
+    background: rgb(220,15,15);
+    background: -moz-linear-gradient(339deg, rgba(220,15,15,1) 0%, rgba(171,115,68,1) 30%, rgba(159,51,204,1) 65%, rgba(2,44,120,1) 100%);
+    background: -webkit-linear-gradient(339deg, rgba(220,15,15,1) 0%, rgba(171,115,68,1) 30%, rgba(159,51,204,1) 65%, rgba(2,44,120,1) 100%);
+    background: linear-gradient(339deg, rgba(220,15,15,1) 0%, rgba(171,115,68,1) 30%, rgba(159,51,204,1) 65%, rgba(2,44,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dc0f0f",endColorstr="#022c78",GradientType=1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1px solid rgb(85, 85, 85);
+    border-radius: 0px;
+    margin-top: 0px;
+}
+a:hover {
+    text-decoration: none;
+}
+nav.navbar a.navbar-brand {
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: "Work Sans", cursive;
+}
+nav.navbar ul li.nav-item a.nav-link {
+    font-size: 1em;
+    font-weight: 100;
+    font-family: "JetBrains Mono", serif;
+}
+nav.navbar ul li.nav-item a.nav-link:hover {
+    color: white;
+    transition: all 0.4s ease-in;
+}
+/* Section Description Starts */
+section.desc {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background: rgb(220,15,15);
+    background: -moz-linear-gradient(339deg, rgba(220,15,15,1) 0%, rgba(171,115,68,1) 30%, rgba(159,51,204,1) 65%, rgba(2,44,120,1) 100%);
+    background: -webkit-linear-gradient(339deg, rgba(220,15,15,1) 0%, rgba(171,115,68,1) 30%, rgba(159,51,204,1) 65%, rgba(2,44,120,1) 100%);
+    background: linear-gradient(339deg, rgba(220,15,15,1) 0%, rgba(171,115,68,1) 30%, rgba(159,51,204,1) 65%, rgba(2,44,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dc0f0f",endColorstr="#022c78",GradientType=1);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(155vh at 50% -70vh);
+}
+div.content {
+    max-width: 1000px;
+    margin-top: 130px;
+    text-align: center;
+    color: white;
+}
+div.content h1 {
+    margin-top: -100px;
+    color: #fff;
+    font-size: 3.8em;
+    font-weight: 700;
+    /* font-family: "Merriweather", monospace; */
+    font-family: 'JetBrains Mono', monospace;
+
+    /* text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #6e5efd,
+    0 0 82px #6e5efd,
+    0 0 92px #6e5efd,
+    0 0 102px #6e5efd,
+    0 0 151px #6e5efd; */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+div.content h4 {
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: "JetBrains Mono", sans-serif;
+    /* text-transform: uppercase; */
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+div.content button.btn1 {
+    margin-top: 10px;
+    padding: 6px 15px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    transition: all 0.4s ease-in;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+div.content button.btn1:hover, div.content button.btn1:active {
+    background-color: white;
+    border: 1px solid #b300ff;
+    color: #b300ff;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+/* Section About Starts */
+section.about div.container div.row div.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.about div.container div.row div.one img {
+    width: 500px;
+    height: 500px;
+}
+section.about div.container div.row div.two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.about div.container div.row div.two h2 {
+    margin-bottom: 15px;
+    font-size: 42px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FE6F00;
+}
+section.about div.container div.row div.two h4 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #7991FF;
+}
+section.about div.container div.row div.two p {
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+section.about div.container div.row div.two button.btn {
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #FFB13F;
+    transition: all 0.3s ease-out;
+    padding: 5px 15px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+section.about div.container div.row div.two button.btn:hover {
+    background-color: #FF69EC;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.3s ease-out;
+}
+/* Section Services Starts */
+section.services {
+    background-color: #C48CFF;
+    opacity: 0.7;
+    color: #000;
+}
+section.services div.three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+section.services div.three h2 {
+    font-size: 42px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 40px;
+}
+section.services div.three h4 {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: "Josefin Sans", serif;
+}
+section.services div.four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+section.services div.five {
+    text-align: center;
+}
+section.services div.center {
+    border-left: 2px solid rgb(117, 116, 116);
+    border-right: 2px solid rgb(117, 116, 116);
+}
+section.services div.five i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 30px 30px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 51px;
+}
+section.services div.five i:hover {
+    background-color: #24C5FF;
+    border: 4px solid black;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+section.services div.five h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+section.services div.five p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: rgb(255, 255, 255);
+}
+/* Section Extra Starts */
+section.extra {
+   /* height: 300px;
+    */
+    background: url("https://images.unsplash.com/photo-1552082919-e60010758c47?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+section.extra div.container div.extra1 i {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+section.extra div.container div.extra1 h5 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+section.extra div.container div.extra1 h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+section.extra div.container div.extra1 {
+    display: flex;
+    height: 300px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Section Skills Start */
+section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.skills h2 {
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FE6F00;
+}
+section.skills div.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.skills div.container ul li.list-group-item {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(146, 145, 145);
+    border-radius: 15px;
+    background-color: rgba(255, 0, 154, 0.2);
+    color: white;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+}
+section.skills div.container ul li.last {
+    border-bottom: 2px solid rgb(146, 145, 145);
+}
+section.skills div.container ul li {
+    font-size: 20px;
+    font-weight: 500;
+}
+section.skills div.container ul li.list-group-item img {
+    margin-left: 200px;
+}
+/* Section Achievements Start */
+section.achievements {
+    background-color: rgb(179, 133, 65);
+}
+section.achievements div.container div.card {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+section.achievements div.container div.card img {
+    border-bottom: 2px solid black;
+}
+section.achievements div.container div.card h5 {
+    font-size: 15px;
+}
+section.achievements div.container h2 {
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Section Projects Starts */
+section.projects h2.pro, section.projects h4.pro {
+    text-align: center;
+}
+section.projects h2 {
+    font-size: 42px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+section.projects h4 {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: "Josefin Sans", serif;
+    padding-top: 30px;
+}
+section.projects div.container div.row div.col-lg-6 img {
+    height: 260px;
+    width: 540px;
+    margin: 30px 0px;
+    box-shadow: 5px 6px 6px 2px rgb(102, 102, 102);
+}
+hr {
+    border: 1px;
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) );
+    height: 1.5px;
+}
+section.projects div.container div.row div.col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.projects div.container div.row div.col-lg-6 h4 {
+    font-weight: 600;
+    font-size: 28px;
+}
+section.projects div.container div.row div.col-lg-6 p {
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+/* Section Contact Starts */
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section.contact div.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.contact div.container input, section.contact div.container textarea {
+    width: 60%;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background: none;
+    padding: 10px 20px 30px 20px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 4px solid #F4D8BA;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: transparent; */
+    backdrop-filter: blur(55px);
+    font-weight: 500;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #D4B28C;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #D4B28C;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #D4B28C;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #D4B28C;
+}
+
+section.contact div.container input:-ms-input-placeholder, section.contact div.container textarea:-ms-input-placeholder {
+    background: none;
+}
+section.contact h2 {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+section.contact h4 {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 600;
+    font-family: "Josefin Sans", serif;
+    font-size: 25px;
+}
+section.contact div.container form button.btn {
+    color: white;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-out;
+    padding: 5px 15px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+section.contact div.container form button.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.3s ease-out;
+}
+/* Footer Section Starts */
+footer.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+footer.foot h2 {
+    padding-top: 10px;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Work Sans", cursive;
+}
+footer.foot div.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+footer.foot div.social i {
+    font-size: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: rgb(221, 221, 221);
+    transition: all 0.4s ease-out;
+}
+footer.foot div.social i:hover {
+    color: grey;
+    transition: all 0.4s ease-out;
+}
+footer.foot div.others {
+    border-top: 1px solid rgb(128, 128, 128);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+footer.foot div.others div.row div.col-sm-3 {
+    text-align: center;
+}
+footer.foot div.others h6 {
+    font-weight: 400;
+}
+footer.foot div.others p {
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 400;
+    color: rgb(194, 194, 194);
+    font-size: 15px;
+}
+@media (max-width: 445px) and (min-width: 400px) {
+    section.about div.container div.row div.one img {
+        width: 350px;
+        height: 350px;
+   }
+}
+@media (max-width: 399px) and (min-width: 320px) {
+    section.about div.container div.row div.one img {
+        width: 300px;
+        height: 300px;
+   }
+}
+@media (max-width: 420px) and (min-width: 320px) {
+    section.projects div.container div.row div.col-lg-6 img {
+        width: 300px;
+        height: 180px;
+   }
+}
+@media (max-width: 545px) and (min-width: 421px) {
+    section.projects div.container div.row div.col-lg-6 img {
+        width: 421px;
+        height: 220px;
+   }
+}
+@media (max-width: 1168px) and (min-width: 990px) {
+    section.projects div.container div.row div.col-lg-6 img {
+        width: 500px;
+        height: 250px;
+   }
+}
+@media (max-width: 1000px) and (min-width: 320px) {
+    section.skills div.container ul li.list-group-item {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(146, 145, 145);
+        border-bottom: 0;
+        border-radius: 15px;
+   }
+    section.skills div.container ul li.list-group-item img {
+        margin-left: 100px;
+   }
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+   }
+    100% {
+        transform: translateX(0);
+   }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+   }
+    100% {
+        transform: translateX(0);
+   }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}

@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <!-- Vivan Jaiswal's Portfolio -->
+<style type="text/css">
+    .topmarquee:link{
+        color: rgb(214, 19, 68);
+        }
+        
+        .topmarquee:visited{
+        color: rgb(162, 6, 209);
+        }
+        
+        .topmarquee:hover{
+        color: rgb(251, 76, 106);
+        }
+        
+
+        .scroll-left {
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background: #000;
+         color: tan;
+         border: None;
+        }
+        
+        .scroll-left p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: left;
+        
+        
+          /* Starting position */
+         -moz-transform:translateX(100%);
+         -webkit-transform:translateX(100%);	
+         transform:translateX(100%);
+         
+        
+         /* Apply animation to this element */	
+         -moz-animation: scroll-left 30s linear infinite;
+         -webkit-animation: scroll-left 30s linear infinite;
+         animation: scroll-left 60s linear infinite;
+        }
+        
+        
+        /* The main text animation code*/
+        @-moz-keyframes scroll-left {
+         0%   { -moz-transform: translateX(100%); }
+         100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes scroll-left {
+         0%   { -webkit-transform: translateX(100%); }
+         100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes scroll-left {
+         0%   { 
+         -moz-transform: translateX(100%);
+         -webkit-transform: translateX(100%);
+         transform: translateX(100%); 		
+         }
+         100% { 
+         -moz-transform: translateX(-100%);
+         -webkit-transform: translateX(-100%);
+         transform: translateX(-100%); 
+         }
+        }
+
+</style>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Vivan Jaiswal - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Cinzel:wght@500&family=Gentium+Basic&family=Merriweather:wght@700&family=Raleway&family=Texturina:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Others -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style_vj.css">
+    <link rel="stylesheet" type="text/css" href="../css/normal_vj.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.ritekrounak.ml/favicon.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navs">
+        <a class="navbar-brand" href="Vivan_Jaiswal_profile.html">Vivan Jaiswal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#desc">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="desc" id="desc">
+        <div class="content">
+            <h1 data-aos="fade-right">&lt;/Hey, Vivan here&gt;</h1>
+            <h4>Python3.Developer()</h4>
+            <a href="#contact"><button class="btn1">CONTACT ME</button></a>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-lg-6 one">
+                    <!-- <img src="https://authmachine.com/static/img/home-banner.24c36218b2fe.svg" alt="Computer Picture" data-aos="fade-up-left"> -->
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80" alt="Computer Picture" data-aos="fade-up-left">
+                </div>
+                <div class="col-lg-6 two">
+                    <h2 data-aos="fade-down">About.Me</h2>
+                    <h4 data-aos="fade-down"># Python3 Developer</h4>
+                    <p data-aos="fade-right">
+                        This is <strong>Vivan Jaiswal</strong> from <b>Gurgaon, India</b>. I love to
+                        code and put my mind to use for problem solving, decision making, pondering and the like.
+                    </p>
+                    <p data-aos="fade-right">
+                        My mind loves logical problems, trying to piece thing together and increasing my general knowledge.
+                        I am currently in <b>Python3 development</b> and I also dabble in lighthearted <b> Web development</b>. I am pursuing a
+                        <b>B.Tech</b> course in <b>Computer Science as of now.</b>
+                    </p>
+                    <p data-aos="fade-right"> I have completed grade 12 from <a href='https://www.suncityschool.in/suncity-school/' target="_blank"><b>Suncity School</b></a>. Apart
+                        from being a builder, programming-lover and an unofficial PyDev, I am also
+                        interested in <b>Maths, Science, and Philosophy</b> and curating a lot of knowledge about diverse subjects that happen to interest me.
+                    </p>
+                    <button class="btn" data-aos="fade-down">Download Re&#768;sume&#768;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container three">
+            <h2 data-aos="flip-left">My.Expertise</h2>
+            <h4># Programming Languages and Web Developement</hh4>
+        </div>
+        <div class="container four">
+            <div class="row">
+                <div class="col-md-4 five">
+                    <i class="fa fa-laptop" aria-hidden="true" data-aos="zoom-in-down"></i>
+                    <h5 data-aos="zoom-in">Web Designer</h5>
+                    <p data-aos="fade-right">I Am A Web Designer By Hobby And Profession. I Have Developed A Lot Of
+                        Projects In It.</p>
+                </div>
+                <div class="col-md-4 five center">
+                    <i class="fa fa-cogs" aria-hidden="true" data-aos="zoom-in-down"></i>
+                    <h5 data-aos="zoom-in">Web Developement</h5>
+                    <p data-aos="fade-up">I Am A Web Developer And Designed A Lot Of Projects By Hobby And
+                        Profession.</p>
+                </div>
+                <div class="col-md-4 five">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true" data-aos="zoom-in-down"></i>
+                    <h5 data-aos="zoom-in">Creative UI/UX Designer</h5>
+                    <p data-aos="fade-left">I Am A UI/UX Developer By Hobby And Profession. I Have Developed A Lot Of
+                        Projects In It.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 data-aos="fade-up">My.Skills</h2>
+        <div class="container">
+            <ul class="list-group">
+                <li class="list-group-item" data-aos="flip-right">Python3<img src="https://img.icons8.com/color/48/000000/python.png" /></li>
+                <li class="list-group-item" data-aos="flip-right">HTML<img src="https://img.icons8.com/color/48/000000/html-5.png" /></li>
+                <!-- <li class="list-group-item" data-aos="flip-right">C++ <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /></li>
+                <li class="list-group-item" data-aos="flip-right">C<img src="https://img.icons8.com/color/48/000000/c-programming.png" /></li> -->
+                <!-- <li class="list-group-item" data-aos="flip-right">GIT<img src="https://img.icons8.com/color/48/000000/git.png" /></li> -->
+                <!-- <li class="list-group-item last" data-aos="flip-right">MySQL<img src="https://img.icons8.com/ios-filled/48/000000/mysql-logo.png" /></li> -->
+            </ul>
+        </div>
+        <br>
+        <br>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h4 data-aos="zoom-in">CONTACTS</h4>
+            <h2 data-aos="zoom-in">GET IN TOUCH</h2>
+            <form action="mailto:vivojaymail@gmail.com" method="post">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" data-aos="fade-right">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" data-aos="fade-right">
+                <textarea name="concern" id="conceren" rows="6" placeholder="Enter Your Concern" data-aos="fade-right"></textarea>
+                <button class="btn" type="submit" data-aos="zoom-in-up">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+    <footer class="foot" id="foot">
+        <a href="#desc" data-aos="fade-down"><i class="fa fa-arrow-circle-up" aria-hidden="true" id="one"
+                style="font-size: 40px;padding-top: 10px; color: white;"></i></a>
+        <h2 data-aos="flip-left"><a data-aos="fade-up" href="Vivan_Jaiswal_profile.html" style="text-decoration: none; color: tan;">Vivan Jaiswal</a></h2>
+        <div class="container social" data-aos="zoom-in-down">
+            <a href="https://bit.ly/vivojay-on-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true" id="one"></i></a>
+            <a href="https://bit.ly/vivojay-on-github" target="_blank"><i class="fa fa-github" aria-hidden="true" id="three"></i></a>
+            <a href="https://bit.ly/vivojay-on-linkedin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" id="four"></i></a>
+            <a href="https://bit.ly/vivojay-on-spotify" target="_blank"><i class="fa fa-spotify" aria-hidden="true" id="five"></i></a>
+        </div>
+        <div class="container others">
+            <div class="row">
+                <div class="col-sm-3" data-aos="fade-up">
+                    <h5>Vivan Jaiswal</h5>
+                    <h6>UI/UX DESIGNER & WEB DEVELOPER & App DEVELOPER</h6>
+                </div>
+                <div class="col-sm-3" data-aos="fade-up">
+                    <h5>Email</h5>
+                    <h6>vivojaymail@gmail.com</h6>
+                </div>
+                <div class="col-sm-3" data-aos="fade-up">
+                    <h5>Address</h5>
+                    <h6>Gurgaon, Haryana, India</h6>
+                    <h6>PIN 122001</h6>
+                </div>
+            </div>
+            <p> &COPY; Vivan Jaiswal @2021. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <div class="scroll-left"><p><b><FONT face = "Trebuchet MS" size = 5px>Thanks for viewing <a class = 'topmarquee' href = '#' style = 'text-decoration: none'>my profile</a> </FONT> </b> </p> </div>
+
+    </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</html>
