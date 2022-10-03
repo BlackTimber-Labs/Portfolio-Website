@@ -1036,7 +1036,7 @@ detective@^5.2.0:
   dependencies:
     acorn-node "^1.6.1"
     defined "^1.0.0"
-    minimist "^1.1.1"
+    minimist "^1.2.6"
 
 didyoumean@^1.2.2:
   version "1.2.2"
