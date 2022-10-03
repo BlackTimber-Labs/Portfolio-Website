@@ -1,7 +1,8 @@
 # Portfolio-Website
 This is a HacktoberFest Repo, You can make portfolio Website of your own .
 
-![Hacktoberfest_2021](https://user-images.githubusercontent.com/64047505/135498250-d13785c0-f397-420b-8f45-2d0ab2b0af92.png)
+![Hacktoberfest_2022](https://user-images.githubusercontent.com/60399486/193461767-fe8144b3-a482-48bb-9cfa-6ba66e55969a.jpg)
+
 
 ## Steps to setup this Repository Locally
 
