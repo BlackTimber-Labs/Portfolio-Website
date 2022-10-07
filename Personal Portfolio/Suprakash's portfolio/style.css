@@ -1,0 +1,484 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:700);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+h1 {
+    font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", "Arial", cursive;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+
+/* navbar  */
+
+.nav-link {
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+
+.header.active {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 10;
+
+}
+
+
+
+/* home section starts here  */
+
+main {
+    height: min(91vh);
+    background: url(img/milad-fakurian-UiiHVEyxtyA-unsplash.jpg)no-repeat center center/cover;
+    font-size: 2.3rem;
+}
+
+main img {
+    height: 2.2rem;
+    /*  */
+}
+
+main .container {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.txt {
+    line-height: 2.4rem;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.Profile {
+    animation: drop 2s ease forwards;
+}
+
+.a {
+    animation-delay: 0.2s;
+}
+
+.b {
+    animation-delay: 0.1s;
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-500px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+
+}
+
+/* media queries of the main section   */
+@media screen and (max-width:800px) {
+    main {
+        font-size: 1.5rem;
+    }
+
+    main .container {
+        top: 40%;
+        left: 10%;
+    }
+
+    .txt {
+        line-height: 1.6rem;
+    }
+
+    main img {
+        height: 1.8rem;
+        /*  */
+    }
+
+
+}
+
+
+
+
+/* about section starts from here  */
+
+
+
+
+#about {
+    margin-top: 7rem;
+}
+
+#about h1 {
+    font-family: cursive;
+}
+
+#about span {
+    color: red;
+}
+
+#about .s {
+    border: 4px solid rgb(233, 60, 60);
+    border-radius: 20px;
+}
+
+#about img {
+    height: 32rem;
+    position: relative;
+    right: 30px;
+    bottom: 20px;
+    border-radius: 20px;
+}
+
+/* media queris for the about section of the page  */
+@media screen and (max-width:800px) {
+    .s {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* skills section starts here  */
+
+
+
+#skills {
+    min-height: 80vh;
+    margin-block: 5rem;
+}
+
+#skills .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(127, 255, 212, 0.641);
+    min-height: 20rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: transform 1s ease-in-out;
+    margin-block: 0.4rem;
+}
+
+#skills .box:hover {
+    transform: rotateX(10deg) rotateY(15deg);
+
+}
+
+#skills h1 {
+    text-align: center;
+}
+
+#skills .row .containers {
+    max-width: 100%;
+    margin: auto;
+}
+
+#skills .row h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    transform-origin: center bottom;
+    transition: all 0.4s;
+    color: rgb(75, 165, 168);
+}
+
+#skills .row h2:first-of-type {
+    transform-origin: center top;
+}
+
+#skills .row .text {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    left: 15%;
+    font-family: "Open Sans";
+    transform: translateY(-50%);
+    transition: all 0.3s;
+
+}
+
+#skills .row .text:before,
+.text:after {
+    display: block;
+    content: "";
+    transition: all 0.3s;
+}
+
+#skills .row .text:hover {
+    background: rgba(127, 255, 212, 0);
+}
+
+#skills .row .inner {
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.915);
+    line-height: 1.5;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+
+#skills .row .containers:hover .inner {
+    padding: 2rem;
+    max-height: 20rem;
+    transform: scale(1);
+}
+
+
+
+
+
+/* projects section starts here  */
+
+#project {
+    background: url(img/gradienta-xOcfppTFdcU-unsplash.jpg)no-repeat center center/cover;
+    min-height: 100vh;
+    box-shadow: 0px 0px 46px 2px rgba(0, 0, 0, 0.48);
+    margin-block: 5rem;
+
+
+}
+
+#project .container {
+
+    padding-block: 5rem;
+}
+
+#project span {
+    background: #83cded;
+    background: -webkit-linear-gradient(to right, #91d7f5 61%, #EACCE8 72%);
+    background: -moz-linear-gradient(to right, #8acae5 61%, #EACCE8 72%);
+    background: linear-gradient(to right, #7cc8e8 61%, #EACCE8 72%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.swiper {
+    width: 30rem;
+    height: 30rem;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#project .caption {
+    padding-inline: 1rem;
+    position: absolute;
+    bottom: 0.2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+
+}
+
+#project .caption p,a{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+@media screen and (max-width:800px) {
+    .swiper {
+        width: 20rem;
+        height: 20rem;
+    }
+
+}
+
+
+
+/* connect section  */
+
+
+
+#connect {
+    min-height: 80vh;
+    padding-bottom: 6rem;
+}
+
+#connect .connect {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+}
+
+#connect .connect .connect-item {
+    padding-block: 1.5rem;
+}
+
+#connect .connect .connect-text {
+    padding-inline: 5rem;
+    line-height: 1.5rem;
+}
+
+.connect-form-container {
+    position: fixed;
+    top: -210%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    z-index: 120;
+}
+
+.connect-form-container.active {
+
+    top: 0;
+}
+
+.connect-form-container form {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    width: 40rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+    border: var(--border);
+    background: #fff;
+}
+
+.connect-form-container form .buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.connect-form-container form .btn {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.connect-form-container form .box {
+    margin: .7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    text-transform: none;
+    border: var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+}
+
+.connect-form-container form p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    /* color: var(--light-color); */
+}
+
+.connect-form-container form p a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.connect-form-container form h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.connect-form-container #close-connect-form {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    #connect .connect .connect-item {
+        padding-block: 1rem;
+    }
+
+    #connect .connect .connect-text {
+        padding-inline: 3rem;
+        line-height: 1rem;
+    }
+
+}
+
+/* contact me section */
+
+
+#contact {
+    background-color: black;
+    color: white;
+    text-align: left;
+
+}
+
+.contact-item {
+    padding: 37px 25px;
+    /* border-radius: 20px; */
+
+
+}
+
+#contact img {
+    height: 1.5rem;
+}
+
+/* footer section */
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/* reveal section */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
