@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing foodento</title>
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style1.css" />
+
+    <!--font font-awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="fas-fa-utensils">Foodento.</i></a>
+
+      <nav class="navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Dishes">Dishes</a>
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Review">Review</a>
+        <a href="#Order">Order</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+
+    <!--search form-->
+
+    <form action="" id="search-form">
+      <input
+        type="search"
+        placeholder="search here...."
+        name=""
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section-->
+
+    <section class="home" id="home">
+      <div class="home-slider">
+        <div class="wrapper">
+          <div class="slide">
+            <div class="content">
+              <span>our special dish</span>
+              <h3>spicy noodles</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium, laudantium.
+              </p>
+              <a href="#" class="btn">Order Now !!</a>
+            </div>
+            <div class="image">
+              <img src="noodles.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="content">
+              <span>our special dish</span>
+              <h3>fries</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium, laudantium.
+              </p>
+              <a href="#" class="btn">Order Now !!</a>
+            </div>
+            <div class="image">
+              <img src="fries.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="content">
+              <span>our special dish</span>
+              <h3>hot pizza</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium, laudantium.
+              </p>
+              <a href="#" class="btn">Order Now !!</a>
+            </div>
+            <div class="image">
+              <img src="pizza.jpg" alt="">
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--custom js file link-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
