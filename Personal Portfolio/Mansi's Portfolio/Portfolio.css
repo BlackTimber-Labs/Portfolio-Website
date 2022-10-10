@@ -1,0 +1,577 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* body::-webkit-scrollbar { 
+    display: none; 
+} */
+
+/* Horizontal Lists */
+
+nav{
+    padding-top: 15px;
+}
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #937890;
+    box-shadow: 0px 4px 8px 1px #535547;
+    z-index: 4;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+    word-spacing: 1rem;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-size: 1.2rem;
+}
+
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+
+/* Social Icons*/
+
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+
+/*Section Classes*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+section:nth-child(2n) {
+    background-color: #1e020229;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: 0px 12% 50px 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: 70px;
+    margin-top: 0px;
+    padding-left: 6%;
+}
+
+#my-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    width: 55%;
+    text-align: justify;
+    color: rgb(107, 106, 106);
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin-left: 6vw;
+}
+
+
+
+/*Skills Section*/
+
+#skills{
+    background-color: rgb(249, 189, 189);
+    /* width: 98.6vw; */
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.skills-display {
+    box-sizing: border-box;
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    max-width: 100px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgb(248, 205, 205);
+    padding: 15px;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-img{
+    height: 65px;
+    margin-bottom: 10px;
+}
+
+.skill-name{
+    color: rgb(2, 1, 31);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+/* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 60%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: left;
+}
+
+
+.timeline-container {
+    padding: 10px;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 8px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #605f5f;
+    font-weight: 600;
+    color: rgb(99, 96, 96);
+    font-size: 1rem;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.experience-description {
+    font-size: 18px;
+    padding: 2px;
+    color: rgb(62, 61, 61);
+    line-height: 20px;
+}
+
+
+
+
+/* projects Section */
+
+#projects{
+    background-color: rgb(249, 189, 189);
+    /* width: 98.6vw; */
+    height: auto;
+}
+
+#projects-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.projects-image-container {
+    max-width: 310px;
+    height: 200px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.projects-image-container img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.projects-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-image-container:hover {
+    box-shadow: 0 0 20px #f8abe8;
+}
+
+.projects-image-container:hover .projects-details {
+    background-color: rgba(203, 150, 150, 0.692);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Contact Form */
+
+#contact {
+    background-image: linear-gradient(50deg, #366dc6 0%, #4f3e76 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+/* #contact-form {
+    margin-left: 20%;
+} */
+
+/* #contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+} */
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#my-details-container p {
+    color: #f4f5f6;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #fbfbfb;
+    font-size: 1.1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.4rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+
+/* Common Text Align Classes */
+
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 572px) {
+
+    #text{
+        word-spacing: 100px;
+    }
+    
+    .bars {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+    } 
+    
+    #about-me{
+        flex-direction: column;
+        padding-top: 0px;
+        align-items: center;
+        padding-left: 20px;
+        width: 150%;
+        overflow: hidden;
+    }
+    
+    #my-image {
+        height: 10rem;
+        width: 10rem;
+    }
+    
+    #about-para {
+        width: 100%;
+        margin-left: 6vw;
+        margin-top: 25px;
+    }
+
+    .timeline-box{
+        width: 90vw;
+    }
+
+    .timeline {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 780px) {
+
+    #about {
+        padding: 0px 8% 50px 0%;
+    }
+
+    #my-image{
+        margin: 20px;
+    }
+    
+    #about-para {
+        width: 55%;
+        margin-left: 6vw;
+    }
+
+    .timeline-box{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    #main{
+        height: 75vh;
+    }
+
+    #text{
+        top: 22vh;
+    }
+
+    #main-icons{
+        top: 45%;
+        margin-top: 10vh;
+        right: 32%;
+
+    }
+
+    #main-icons .horizontal-list li{
+        display: inline-block;
+    }
+
+    #cube{
+        margin: 43vh 10%;
+    }
+}

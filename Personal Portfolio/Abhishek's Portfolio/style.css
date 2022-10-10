@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@1,300&family=Prompt:wght@600&family=Varela+Round&display=swap');
+*{
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior:smooth;
+    
+    
+}
+.hero{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.hdqwalls.com/download/planets-vector-10k-j4-7680x4320.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    z-index: -10;
+}
+
+.main{
+
+    z-index: 2;
+    height: 100vh;
+}
+
+.nav{
+    
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;  
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+.logo{
+
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.nav-links{
+
+    margin-left: auto;
+}
+
+.nav-links a{
+
+    text-size-adjust: 10%;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    background-color:#e52165;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+
+
+.nav-links a:hover{
+
+    background-color: white;
+    color: #e52165;
+    border-radius: 20px;
+ 
+}
+
+.about{
+
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 200px;
+    line-height:2;
+    background: rgba(77, 77, 179, 0.274);
+    padding: 80px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: white;
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(5px);
+        
+}
+
+
+.container a
+{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    background-color: #d9138a;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #12a4d9;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.container a:hover{
+    box-shadow: inset 250px 0 0 0 #e2d810;
+    color: black;
+}
+.projects{
+
+    max-width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: rgba(77, 77, 179, 0.274);
+    padding: 50px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: white;
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(5px);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: rgba(120, 4, 228, 0.274);
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: white;
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(5px);
+}
+
+.contact p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+.contact:hover{
+
+    transform: scale(1.1);
+}
+.projectBox{
+    
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    background: rgba(5, 3, 5, 0.274);
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    color: white;
+    
+}
+
+.projectBox:hover{
+
+    transform: scale(1.05);
+    background: rgba(199, 177, 177, 0.274);
+}
+
+.projectImage{
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.projectBox h1{
+    margin-left: 20px;
+    
+    
+}
+
+.projectBox p{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.about:hover{
+
+    transform: scale(1.1);
+}
+
+.about p{
+    font-size: larger;
+}
+.about h1{
+    color:#d9138a;
+    font-size: 50px;
+}
+.container{
+    display: flex;
+
+}
+
+.socials{
+    display: flex;
+   flex-direction: row;
+   margin: auto;
+   margin-bottom: 20px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+    transition: transform 250ms;
+  }
+
+.fa-instagram {
+    size: 200px;
+    background: #f70692;
+    color: white;
+  }
+
+  .fa-instagram:hover {
+    background: #9408f14d;
+    color: white;
+    transform: translateY(-10px);
+  }
+
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin:hover {
+    background: #004bec;
+    color: white;
+    transform: translateY(-10px);
+  }
+  .fa-github {
+    background: #000000;
+    color: white;
+  }
+
+  .fa-github:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: translateY(-10px);
+  }
+
+.skills
+{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: rgba(77, 77, 179, 0.274);
+    padding: 50px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: white;
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(5px);
+    list-style: none;
+}
+.skills li{
+    margin: 2px;
+    padding:20px;
+    list-style-type: none;
+}
+.bar{
+    background: rgb(255, 255, 255);
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height:20px;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+    float: left;
+}
+.html
+{
+    width: 70%;
+    animation: html 3s;
+}
+.css
+{
+    width: 50%;
+    animation: css 3s;
+}
+.js
+{
+    width: 50%;
+    animation: js 3s;
+}
+.py
+{
+    width: 90%;
+    animation: py 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:50%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:50%;
+    }
+}
+@keyframes py{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .hero{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://9mmwallpapers.com/wp-content/uploads/Minimalist-Wallpaper-For-Phone-728x1536.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .about:hover{
+
+        transform: scale(1.0);
+    }
+
+    .nav-links{
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px ;
+        z-index: 2;
+    }
+
+
+    .about{
+
+        margin: 30% 20px;
+        padding: 20px;
+        background: rgba(2, 2, 165, 0.274);
+        max-width: 100%;
+        backdrop-filter: blur(4px);
+       --webkit-backdrop-filter: blur(5px);
+    }
+
+    .about p{
+       font-size: smaller;
+    
+    }
+    
+
+    .projects{
+
+        margin: 30% 20px;
+        padding: 20px;
+        background: rgba(16, 16, 192, 0.274);
+        max-width: 100%;
+        backdrop-filter: blur(2px);
+       --webkit-backdrop-filter: blur(5px);
+    }
+
+    .projectBox{
+        flex-direction: column;
+        max-width: 800px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        background: rgba(5, 3, 5, 0.274);
+        padding: 30px;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+        color: white;
+        
+    }
+    
+    .projectImage{
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 15px;
+    }
+    .details p{
+        font-size: smaller ;
+    }
+    .container{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .container a{
+        margin-top: 10px;
+        font-size: small;
+    }
+    }
