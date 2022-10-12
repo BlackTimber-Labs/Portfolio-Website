@@ -1,0 +1,20 @@
+{
+    "name" : "Suvarnesh' Resume",
+    "short_name" : "Suvarnesh KM",
+    "start_url" : ".",
+    "background_color" : "white",
+    "theme_color" : "#378C3F",
+    "display" : "standalone",
+    "icons" : [
+        {
+            "src" : "images/logo64.png",
+            "sizes" : "64x64",
+            "type" : "image/png"
+        },
+        {
+            "src" : "images/logo512.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        }
+    ]
+}
