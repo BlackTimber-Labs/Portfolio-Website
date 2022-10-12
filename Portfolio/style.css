@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400&family=Dancing+Script&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height: 100vh;
+    background-size:150% 150%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(rgba(133, 212, 238, 0.556),rgba(182, 17, 162, 0.534)),url(https://wallpaperaccess.com/full/5651986.jpg);
+}
+
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.header{
+    width:100%;
+    height: 100vh;
+    background-size:100% 100%;
+    position: relative;
+    background-size: cover;
+}
+.logo{
+    color: rgb(28, 111, 115);
+    font-size: 2rem;
+}
+.header:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    
+}
+.nav-item a{
+     font-weight: bold;
+     color: rgb(223, 231, 240);
+}
+.navbar{
+    position:relative;
+}
+
+.header-section{
+    width:100%;
+    height:inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.name{
+    color: rgb(68, 102, 102);
+    font-size: 4rem;
+     font-weight: bold;
+     font-family:poppin;
+}
+.about{
+    color: rgb(66, 66, 74);
+    font-size: 3rem;
+    font-family:poppin;
+    font-weight:lighter;
+
+}
+.info{
+    color: rgb(22, 31, 31);
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+button{
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px;
+    color: rgb(54, 138, 138);
+    border-color: black;
+    backface-visibility:visible;
+    background-size: 250% 250%;
+    background-image:url(./Screenshot\ 2022-05-15\ 150840.png);
+}
+button:hover{
+    background-color: aliceblue;
+    background-image: none;
+}
+.devpic img{
+    width: 12rem;
+    border-radius: 50%;
+    padding: 0%;
+}
+#services{
+    color:black;
+    background-image: linear-gradient(rgba(197, 227, 237, 0.556),rgba(176,215, 233, 0.534));
+}
+#about{
+    margin-top: 17.5rem;
+    color: black;
+    background-image: linear-gradient(rgba(197, 227, 237, 0.556),rgba(176, 215, 233, 0.534));
+}
+.imageAboutPage{
+    width: 20rem;
+}
+.card-body{
+    text-align: center;
+    
+}
+.card1-body{
+    text-align: center;
+    padding: 0 0 1rem 0;
+    
+}
+
+.card:hover{
+    box-sizing: content-box;
+    box-shadow: 0 10px 10px 0;
+    transform: translateY(-10px);
+}
+#portfolio{
+    color:black;
+    background-image: linear-gradient(rgba(197, 227, 237, 0.556),rgba(176, 215, 233, 0.534));
+}
+
+#testimonials{
+    background-image: linear-gradient(rgba(197, 227, 237, 0.556),rgba(176, 215, 233, 0.534));
+    border: 0ch;
+ padding: 5rem;
+ text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+
+}
+.testimonial-text{
+    font-size: 1.5rem;
+    font-family:dancing script;
+    font-weight: lighter;
+    color: rgb(10, 8, 8);
+}
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+
