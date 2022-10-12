@@ -1,0 +1,28 @@
+.container{
+    margin-top: 10rem;
+    background-color: rgb(217, 235, 250);
+    padding: 2%;
+    /* margin-top: 0; */
+}
+
+.container h1{
+    padding-top: 5%;
+}
+
+.container strong{
+    color: brown;
+}
+
+hr{
+    height: 2px;
+    background: black;
+}
+
+#links{
+    background-color: #22C7FC;
+    margin-top: 0;
+}
+
+#github{
+    margin-left: 5rem;
+}
