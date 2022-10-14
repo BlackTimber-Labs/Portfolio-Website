@@ -1,0 +1,198 @@
+body{
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	font-family: 'Ubuntu', sans-serif;
+}
+nav ul li{
+	list-style-type:none;
+	float:left;
+	padding-right:2.5em;
+	color:#eff3c6;
+}
+nav ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+nav ul li a:hover{
+	color:brown;
+}
+nav ul{
+	float:right;
+}
+nav{
+	position:fixed;
+	width:100%;
+	height:50px;
+	background-color:#0779e4;
+	
+}
+section{
+	background-color:#4cbbb9;
+	
+}
+.home{
+	
+	padding-top:1px;
+	background-color:#ffffff;
+	text-align:center;
+	font-size:44px;
+	color:rgb(0, 0, 0);
+	display:table;
+	height:100vh;
+	width:100%;
+	
+}
+.inner{
+	display:table-cell;
+	vertical-align:middle;
+	
+}
+.home .inner{
+	line-height:20px;
+}
+.home .inner h3{
+	font-size:40px;
+}
+.home .inner img{
+	border-radius:100%;
+}
+.about{
+	background-image:url('https://www.indiancritic.com/wp-content/uploads/2013/03/professional-website-background-1.jpg');
+	
+	display:table;
+	height:100vh;
+	
+	width:100%;
+	background-size:100% 100vh;
+	background-repeat:no-repeat;
+}
+
+.about .inner{
+	display:table-cell;
+	vertical-align:middle;
+	width:80%;
+	float:left;
+	padding-top:10px;
+	padding-left:50px;
+	text-align:justify;
+}
+.about .inner h1{
+		padding-left:100px;
+	font-size:52px;
+}
+.about .inner p{
+	
+	padding-left:190px;
+	font-size:27px;
+}
+.education{
+	background-color:#fff;
+	display:table;
+	height:100vh;
+	width:100%;
+	
+}
+.education .inner{
+	
+	padding:50px;
+	
+}
+.education h1{
+	padding-top:20px;
+	font-size:40px;
+}
+.education .inner div{
+	width:30%;
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+	text-align:center;
+}
+.education .inner div img {
+	width:100%;
+		height:auto;
+}
+.hobbies{
+	background-image:url('https://image.freepik.com/free-photo/wood-table-top-blur-glass-window-wall-building-background-can-used-display-montage-your-products_7191-312.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100vh;
+	display:table;
+	height:100vh;
+	width:100%;
+}
+
+.hobbies .inner, .contact {
+	padding:50px;
+	
+}
+.hobbies .inner h1, .skills .inner h1{
+	font-size:48px;
+}
+.hobbies .inner h4{
+	font-size:32px;
+}
+.hobbies .inner div, .skills .inner div{
+	width:30%;
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+	text-align:center;
+}
+.skills {
+	background-image:url('https://blog.bannersnack.com/wp-content/uploads/2016/04/whatisabannerad_1360x700_blogpost.png') ;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:table;
+	height:100vh;
+	width:100%;
+}
+.skills .inner{
+	background-color: rgba(0,0,0,0.6);
+	padding:50px;
+	color:#fff;
+}
+.skills .inner div ul{
+	list-style-type:none;
+}
+.skills .inner div ul li{
+	font-size:32px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.contact{
+	
+	display:table;
+	height:80vh;
+	width:90%;
+}
+.contact div{
+	text-align:center;
+}
+.contact div p{
+	font-size:28px ;
+}
+.contact div h1{
+	font-size:48px;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+	
+	.home .inner img{
+		padding-top:1px;
+	}
+	.about .inner{
+		width:95%;
+		padding:25px;
+	}
+	.about .inner p{
+		font-size:18px;
+		text-align:justify;
+	}
+	.education .inner div, .hobbies .inner div, .skills .inner div{
+		width:100%;
+	}
+	.hobbies .inner div{
+		border-bottom:2px solid #d3d3d3;
+	}
+}
