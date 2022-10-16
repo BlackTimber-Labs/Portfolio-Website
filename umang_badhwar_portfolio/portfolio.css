@@ -1,0 +1,146 @@
+/*------------header--------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+   
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+a
+{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    Letter-spacing: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+a:hover
+{
+    color: white;
+    background: #21f39c;
+    box-shadow: 0 0 10px #21f39c, 0 0 20px #21f39c, 0 0 40px #21f39c;
+
+}
+
+/*---------------------------Intro-------------------------*/
+.header-text{
+    margin-top: 80%;
+    font-size: 10px;
+
+}
+.header-text {
+    font-size: 50px;
+    margin-top: 150px;
+    font-weight: 600;
+}
+.header-text span{
+    background: linear-gradient( #33f3bd  ,#50e493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+/*---------------------------WORK-------------------------*/
+#work{
+    padding: 30px 0;
+
+}
+
+.container{
+    padding: 10px 10%;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.work-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.work-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.work-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+} 
+.work-list div:hover{
+    background: linear-gradient( #33f3bd  ,#50e493);
+    transform: translateY(-10px);
+}    
+
+
+/*#content-writing{
+    border: #f333e0;
+    border-radius: 10px;
+    
+    
+}*/
+
+/*-----------------portfolio-----*/
+#portfolio{
+    padding: 60px 0;
+}
+
+
+
+
