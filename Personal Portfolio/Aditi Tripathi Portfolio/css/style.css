@@ -1,0 +1,455 @@
+:root {
+	--red: #dd1c1a;
+	--dark: #0f0a0a !important;
+	--yellow: #e0a458 !important;
+	--light: #f6f6f6;
+	--lBlue: #bfcde0;
+	--yellowL: #e5bf07;
+	--redL: #c90f0d;
+	--blue: #1a936f !important;
+	--blueL: #3174d0;
+	--fFamily: 'Poppins', sans-serif;
+	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
+	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: var(--fFamily);
+}
+body {
+	background-color: var(--dark);
+	color: var(--light);
+	overflow-x: hidden;
+	transition: all 200ms ease-in-out;
+}
+body a {
+	color: var(--light);
+	text-decoration: none;
+}
+body ul {
+	list-style-type: none;
+}
+.title {
+	font-size: 82px;
+	color: var(--blue);
+	font-weight: 800;
+}
+.space {
+	width: 100%;
+	height: 20vh;
+}
+.section {
+	width: 100%;
+	margin-left: 15vh;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: column;
+}
+.blue {
+	position: absolute;
+	left: 15vh;
+	top: 75vh;
+	width: 200px;
+}
+.illus {
+	position: absolute;
+	right: 0%;
+	top: 50px;
+	width: 300px;
+}
+
+/* Navbar CSS Starts*/
+
+.navbar {
+	width: 13vh;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--darkShadowLg);
+	background-color: var(--dark);
+	position: fixed;
+	z-index: 99;
+}
+.navbar .logo {
+	position: absolute;
+	top: 40px;
+	transition: all 200ms ease-in-out;
+}
+.navbar .logo img {
+	width: 35px;
+}
+.navbar .logo:hover {
+	transform: scale(1.1);
+}
+.navbar .navTheme {
+	position: absolute;
+	bottom: 50px;
+	cursor: pointer;
+}
+.navbar .navTheme:hover {
+	transform: scale(1.3);
+	color: var(--yellow);
+}
+
+.navbar .navLinks ul {
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.navbar .navLinks .navLink {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms ease-in-out;
+}
+.navbar .navLinks .navLink:hover {
+	color: var(--yellow);
+}
+.navbar .navLinks .navLink .material-icons {
+	font-size: 30px;
+}
+.navbar .navLinks .navLink .navText {
+	font-size: 16px;
+}
+/* Theme Button CSS */
+.theme {
+	display: none;
+}
+
+/* Theme Button CSS Ends */
+
+/* Hero CSS Starts*/
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.hero .heroImg img {
+	width: 200px;
+	margin-bottom: 30px;
+	clip-path: circle(50%);
+	/* border:3px solid --yellow */
+}
+.hero .heroTitle {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.hero .heroBtns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero .heroBtns .btn {
+	width: 200px;
+	text-align: center;
+	padding: 15px 30px;
+	background-color: var(--yellow);
+	color: var(--dark);
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 200ms ease-in-out;
+}
+.hero .heroBtns .btnSec {
+	width: 200px;
+	text-align: center;
+	padding: 15px 30px;
+	border: 2px solid var(--yellow);
+	color: var(--yellow);
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 200ms ease-in-out;
+}
+.hero .heroBtns .btn:hover {
+	transform: scale(1.08) !important;
+}
+.hero .heroBtns .btnSec:hover {
+	background-color: var(--yellow);
+	color: var(--dark);
+}
+
+/* About Section CSS Starts */
+
+.about .aboutContent {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	font-size: 24px;
+	width: 80%;
+	text-align: justify;
+	line-height: 50px;
+}
+.about .aboutContent a {
+	color: var(--blue);
+	transition: all 200ms;
+}
+.about .aboutContent:hover {
+	color: var(--yellow);
+}
+.about .abtBtn {
+	width: 200px;
+	text-align: center;
+	padding: 15px 30px;
+	background-color: var(--yellow);
+	color: var(--dark);
+	margin-top: 20px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 200ms ease-in-out;
+}
+.about .abtBtn:hover {
+	background-color: var(--yellow);
+	color: var(--dark);
+	transform: scale(1.2) !important;
+}
+
+/* About Section Ends Here */
+
+/* Skills CSS Starts */
+
+.skills .cardRow {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: -10px;
+}
+.skills .cardRow .card {
+	width: 300px;
+	height: 300px;
+	box-shadow: var(--darkShadowLg);
+	margin: 10px;
+	border-radius: 8px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+.skills .cardRow .card .cardIcon .material-icons {
+	font-size: 64px;
+	color: var(--yellow);
+}
+.skills .cardRow .card .cardTitle {
+	font-size: 32px;
+}
+.skills .cardRow .card .cardContentLg {
+	position: absolute;
+	background-color: var(--yellow);
+	color: var(--dark);
+	width: 100%;
+	height: 100%;
+	padding: 35px;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 600;
+	transform: translateY(100%);
+	transition: all 350ms ease-in-out;
+}
+.skills .cardRow .card .cardContentSm {
+	display: none;
+}
+.skills .cardRow .card:hover .cardContentLg {
+	transform: translateY(0%);
+}
+/* Projects CSS Starts */
+.projects .cardRow {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-left: -15px;
+}
+.projects .cardRow .card {
+	width: 500px;
+	height: 260px;
+	margin: 10px;
+}
+.projects .cardRow .card img {
+	width: 500px;
+	height: 260px;
+	box-shadow: var(--darkShadowLg);
+	border-radius: 8px;
+	transition: all 200ms ease-in-out;
+}
+.projects .cardRow .card:hover img {
+	transform: scale(1.02);
+	box-shadow: 2px 2px 25px #ffffff20;
+}
+
+/* Contact section starts */
+.contact .iconRow {
+	display: flex;
+	margin-top: 20px;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.contact .iconRow .icon {
+	margin: 10px;
+	font-size: 64px;
+	padding-right: 50px;
+	transition: all 200ms ease-in-out;
+}
+.contact .iconRow .icon:hover {
+	color: var(--yellow);
+	transform: translateY(-10%) !important;
+}
+
+@media screen and (max-width: 860px) {
+	/* Global CSS */
+	.title {
+		font-size: 52px;
+	}
+	.space {
+		width: 100%;
+		height: 10vh;
+	}
+	.section {
+		margin-left: 0;
+		padding: 50px 30px;
+	}
+	/* Navbar Mobile CSS */
+	.navbar {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 10vh;
+		box-shadow: var(--darkShadowSm);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		z-index: 99;
+	}
+	.navbar .logo,
+	.navbar .navTheme {
+		display: none;
+	}
+
+	.navbar .navLinks {
+		width: 100%;
+	}
+
+	.navbar .navLinks ul {
+		height: 10vh;
+		width: 100%;
+		padding: 0 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	/* Theme Button Mobile CSS Stars */
+
+	.theme:hover {
+		color: var(--yellow);
+		transform: scale(1.3);
+	}
+
+	/* Theme Button CSS Ends */
+
+	/* Hero Mobile CSS */
+
+	.hero .heroImg img {
+		width: 150px;
+		margin-bottom: 20px;
+	}
+	.hero .heroTitle {
+		font-size: 28px;
+	}
+	.hero .heroBtns {
+		flex-direction: column;
+	}
+	/* About Section Mobile CSS  */
+
+	.about .aboutContent {
+		margin-top: 20px;
+		width: 100%;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	/* About Section CSS Ends Here */
+	/* illustration SVG */
+	.illus {
+		top: 15px;
+		width: 200px;
+	}
+	.blue {
+		display: none !important;
+	}
+	/* Skills Mobile CSS Starts */
+	.skills .cardRow {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.skills .cardRow .card {
+		width: 180px;
+		height: 180px;
+		padding: 25px;
+		align-items: flex-start;
+		overflow: visible;
+	}
+	.skills .cardRow .card .cardIcon .material-icons {
+		font-size: 46px;
+	}
+	.skills .cardRow .card .cardTitle {
+		font-size: 22px;
+	}
+	.skills .cardRow .card .cardContentLg {
+		display: none;
+	}
+	.skills .cardRow .card .cardContentSm {
+		display: block;
+		position: absolute;
+		left: 90%;
+		width: 100%;
+		height: 95%;
+		background-color: var(--yellow);
+		color: var(--dark);
+		font-size: 16px;
+		font-weight: 500;
+		border-radius: 8px;
+		padding: 15px;
+	}
+	/* Projects Mobile CSS Starts */
+
+	.projects .cardRow {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.projects .cardRow .card {
+		width: 90%;
+	}
+
+	/* Contact Mobile CSS Starts */
+
+	.contact .iconRow .icon {
+		font-size: 32px;
+		padding-right: 20px;
+	}
+}

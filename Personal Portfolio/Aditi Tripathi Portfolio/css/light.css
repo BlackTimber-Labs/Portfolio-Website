@@ -1,0 +1,104 @@
+:root {
+	--red: #dd1c1a;
+	--dark: #011627;
+	--yellow: #f0c808;
+	--light: #f6f6f6;
+	--lBlue: #bfcde0;
+	--yellowL: #e0a458 !important;
+	--redL: #c90f0d;
+	--blue: #6cabff;
+	--blueL: #3174d0;
+	--fFamily: 'Poppins', sans-serif;
+	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
+	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
+	--lightShadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+body.light {
+	background-color: var(--light);
+	color: var(--dark);
+}
+body.light a {
+	color: var(--dark);
+}
+
+body.light .title {
+	color: var(--blueL);
+}
+body.light .navbar .navTheme {
+	color: var(--light);
+}
+
+body.light .navbar .navTheme:hover {
+	color: var(--yellowL);
+}
+body.light .navbar .navLinks .navLink {
+	color: var(--light);
+}
+
+body.light .navbar .navLinks .navLink:hover {
+	color: var(--yellowL);
+}
+
+body.light .hero .heroBtns .btn {
+	background-color: var(--yellowL);
+	color: var(--dark);
+}
+body.light .hero .heroBtns .btnSec {
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+}
+
+body.light .hero .heroBtns .btnSec:hover {
+	background-color: var(--yellow);
+	color: var(--dark);
+}
+
+body.light .about .aboutContent a {
+	color: var(--blueL);
+	transition: all 200ms;
+}
+body.light .about .aboutContent:hover {
+	color: var(--yellowL);
+}
+body.light .about .abtBtn {
+	background-color: var(--yellow);
+	color: var(--dark);
+}
+body.light .about .abtBtn:hover {
+	background-color: var(--yellowL);
+	color: var(--dark);
+}
+body.light .skills .cardRow .card {
+	box-shadow: var(--lightShadow);
+}
+
+body.light .skills .cardRow .card .cardIcon .material-icons {
+	color: var(--yellowL);
+}
+
+body.light .skills .cardRow .card .cardContentLg {
+	background-color: var(--yellowL);
+	color: var(--dark);
+}
+
+body.light .projects .cardRow .card img {
+	box-shadow: var(--lightShadow);
+}
+
+body.light .contact .iconRow .icon:hover {
+	color: var(--yellowL);
+}
+
+@media screen and (max-width: 860px) {
+	/* Global CSS */
+
+	body.light .theme:hover {
+		color: var(--yellowL);
+	}
+
+	body.light .skills .cardRow .card .cardContentSm {
+		background-color: var(--yellowL);
+		color: var(--dark);
+	}
+}
