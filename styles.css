@@ -1,0 +1,79 @@
+body{
+    background-color: #000000;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.socials{
+    font-size: 25px;
+    float: right;
+   
+    
+}
+
+.terminal{
+    padding-bottom: 7px;
+    position: relative;
+    color:#00c2ba;
+    text-shadow:0.5px 0.5px 8px #00c2ba;
+    float:left;
+    font-size: 30px;
+  align-items: center;
+  gap: 2px;
+    
+}
+
+.terminal ::after{
+    content:" ";
+    width: 10px;
+    height: 20px;
+    background: #00c2ba;
+    display: inline-block;
+    box-shadow: 0.5px 0.5px 8px #00c2ba;
+    animation: cursor-blink 1s steps(2) infinite;
+}
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+      
+    }
+  }
+
+.listo a{
+    position: relative;
+    font-size: larger;
+    text-align: center;
+    color: #666;
+    margin-right: 10px;
+    
+}
+.listo a:hover{
+    color: #00c2ba;
+    transition: 0.5s;
+}
+.yo{
+    display:flex;
+    align-items: center;
+    
+}
+.text{
+   margin-left:75px;
+}
+.para1{
+    font-family: 'JetBrains Mono', monospace;
+}
+.ascii{
+    margin-top: 60px;
+    text-shadow:0.5px 0.5px 8px #00c2ba;
+
+    
+}
+.name{
+    color: #00c2ba;
+}
