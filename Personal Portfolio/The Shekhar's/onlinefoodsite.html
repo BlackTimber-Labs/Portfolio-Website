@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Food Delivery Service</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*css variables*/
+      :root {
+        --navbar-height: 59px;
+      }
+      /*Navbar*/
+      #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: bisque;
+      }
+      /*Logo and image*/
+      #logo {
+        margin: 500px;
+        margin: 40px;
+        animation: inline 2s;
+      }
+      #navbar::before {
+        background-color: brown;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+      }
+      #logo img
+        { display: block;}
+      
+      #navbar ul {
+        display: flex;
+        font-family: cursive;
+      }
+      #navbar ul li a {
+        display: block;
+        padding: 20px;
+        border: 5px solid white;
+        border-radius: 20px;
+        text-decoration: none;
+    
+      }
+      #navbar ul li a:hover {
+        cursor: pointer;
+        color: yellow;
+        font-weight: bold;
+        font-size: medium;
+        font-style: italic;
+        background-color: green;
+        display: inline;
+        text-decoration: none;
+      }
+
+     
+      ul{
+          margin: 5px;
+          width: 800px;
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+          padding: 25px;
+          border-radius: 25px;
+          background-color: black;
+          box-shadow: 0px;
+      }
+      li{
+          margin: auto;
+          color: white;
+          font-size: 20px;
+          cursor: pointer;
+
+      }
+      li::after{
+          display: block;
+      }
+      li hover::after{
+          transform: scaleX(1);
+      }
+      #Home {
+        display: inline-block;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-display: inline;
+        color: brown;
+
+        padding: 0px;
+      }
+      #home2 {
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+        background: url("../download,jpg");
+        text-decoration: none;
+
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: burlywood;
+        background-color: brown;
+        font-style: italic;
+      }
+      #retreat {
+        right: 600px;
+      }
+      #home h1 {
+        color: white;
+        text-align: center;
+      }
+      .btn {
+        padding: 6px;
+        font-size: medium;
+        color: bisque;
+        background-color: brown;
+        justify-content: center;
+
+        border: none;
+        border-radius: 25px;
+        align-items: center;
+      }
+      .btn:hover {
+        font-style: italic;
+        cursor: pointer;
+        font-family: cursive;
+        align-items: center;
+      } 
+      .services{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color:goldenrod;
+      font-size: medium;
+      background-color: brown;
+      align-items: center;
+    text-align: center;
+      display: block;
+      justify-content: center;
+
+      }
+      body{
+          background-color: brown;
+
+      }
+      section img{
+          border-radius: 25px;
+          border: 2px solid whitesmoke;
+          height: 250px;
+          width: 250px;
+
+      }
+      .sectionup{display: inline-block;
+          font-family: cursive;
+          color: yellow;
+          font-weight: bold;
+          font-size: 1.3rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    list-style:circle;
+          
+      }
+      .sectionup img{
+          padding: 0px;
+          height: 70px;
+          font-weight: 50px;
+          cursor: pointer;
+          display:inline-block;
+          text-align: center;
+        justify-items: center;
+
+      }
+      .navbar img{
+          display: block;
+      }
+     /* .division{
+          background: none;
+          height: 1px;
+          width: 300px;
+          padding: 0px;
+opacity:0.1;
+margin: 0px;
+background-color: brown;
+color: gold; 
+     }*/
+     .btn2{
+         font-family: cursive;
+         border: 2px solid yellow;
+         border-radius: 20px;
+         margin: none;
+         background-color:rosybrown;
+font-size: larger;
+         color:maroon;
+         padding: 20px;
+         width: 20%;
+         
+         
+
+     }
+     .btn2:hover{font-weight: bold;
+        font-style: italic;
+cursor:pointer;
+color: yellow;
+         
+ text-underline-position: below solid white;
+
+     }
+     sub h3 i {
+         text-align: end;
+     }
+     .clients{color: yellow;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;}
+
+.clients{align-items: center;
+    padding:0px;
+    border-radius: 0px;
+    height:50%;
+width:40%;
+justify-content: center;}
+    
+    
+
+
+
+
+
+
+
+
+
+
+     
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="logo1.jpg" alt="MyOnlinemeal.com" />
+      <sup>  &reg;    </sup>
+        <section id="Home">
+          <h1>THE SHEKHAR's  &trade;</h1>
+          <sub></sub> 
+       
+        </section>
+        <sub><h3><i>estd. 2022</i> </h3></sub>
+        <footer id="retreat">
+        <body>
+            <h3><i> A classical family restaurant</i></h3>
+        </body> 
+        </footer>
+        
+        <ul>
+          <li class="item"><a>Home</a></li>
+
+          <li class="item"><a>Services</a></li>
+          <li class="item"><a>Contact Us</a></li>
+          <li class="item"><a>About Us</a></li>
+          <li class="item"><a>Outlets</a></li>
+          <li class="item"><a>Franchise</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home2">
+      <h2>Welcome to THE SHEKHAR's online food ordering platform</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+        amet illum suscipit quia sed vitae vel, debitis delectus? Quasi natus
+        excepturi enim ut, ipsam fugit quos rem optio vitae nemo dolore ullam
+        quibusdam magnam explicabo magni ex reiciendis. Temporibus corporis
+        nulla dolor alias praesentium nemo tenetur eaque omnis officiis
+        perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fuga, quidem deserunt? Obcaecati quis sit nemo in, reprehenderit debitis
+        dignissimos vitae? Cumque neque minus similique commodi?
+      </p>
+    </section>
+    <button class="btn">Order now</button>
+  
+<div class="services">
+    <section>
+        <h2><i>Food Ordering</i></h2>
+<img src="delivery.jpg" alt="" >
+
+<p><i>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum molestiae dicta culpa pariatur deleniti. Possimus voluptates sed asperiores unde mollitia ea, distinctio beatae ex laborum soluta. Iure ipsa, nam omnis libero quasi a deleniti.<i></p>
+  <button class="btn2">Book Now</button>
+        <h2>Special Night Dinner</h2>
+        <img src="dine in.jpg" alt="">
+        <p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem earum, nam porro quasi tempora, facere quam numquam assumenda perspiciatis minima aliquam odio! Ea ex porro possimus sapiente ipsum similique blanditiis neque est perferendis magni?</i></p>
+    <button class="btn2">Book Now</button>
+    <br>
+        <h2>
+        Bulk Order Bookings
+        </h2>
+        <img src="bulkorder.jpg" alt="">
+     <p><i>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam doloremque vel blanditiis molestiae accusamus minus, quod saepe atque impedit laborum incidunt rerum quisquam. Ad eius ipsum vel modi similique, sequi iure officiis mollitia atque.</i></p>. 
+     <h2>
+        <button class="btn2">Book Now</button>
+        <br>
+         Catering services
+     </h2>
+     <img src="catering1.jpg" alt="">
+    
+<p><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum error, necessitatibus doloribus enim nostrum laboriosam incidunt quaerat nemo, obcaecati, sapiente repellat distinctio sunt aspernatur dolor adipisci consequuntur dolorem eligendi totam esse impedit! Necessitatibus, accusamus.</i></p>
+<button class="btn2">Book Now</button>
+<br>
+</div>
+</section>  
+
+<section id="clients-section"> <h1 class="clients"> Our Clients</h1>  
+    <div id="clients">
+        <div class="client-items">
+            <img src="accenturelogo.png" alt="Our Client">
+            <img src="infosys.png" alt="Our client">
+            <img src="wipro.png" alt="Our client">
+        </div>
+    </div>
+   
+
+</section>
+  
+<br>
+<br><br>
+<br><br>
+
+<section class="sectionup">
+    You can order items through your mobile
+    <br>
+    Download our official application!
+    <br>
+<img src="playstore.png" alt="">
+<img src="appstorelogo.png" alt="">
+</section>
+
+  
+            
+           
+
+
+  </body>
+</html>
