@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Sucheta Mondal</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Sucheta Mondal — Tech-Enthusiast,UI/UX Designer & Front-End Web Developer. Portfolio showcasing projects, skills and contact." />
+  <meta name="author" content="Sucheta Mondal" />
+
+  <!-- Bootstrap 4 & Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Balsamiq+Sans:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" href="https://www.ritekrounak.ml/favicon.png" type="image/png">
+
+  <!-- Embedded CSS (quick demo) -->
+  <style>
+    :root{
+      --accent:#007bff;
+      --muted:#6c757d;
+      --bg:#f8f9fa;
+      --card:#ffffff;
+    }
+    html,body{height:100%}
+    body{
+      font-family: 'Raleway', sans-serif;
+      background:var(--bg);
+      color:#222;
+      line-height:1.6;
+      padding-top:70px; /* for fixed navbar */
+    }
+    /* Navbar */
+    #mainNav{
+      background:linear-gradient(90deg, rgba(0,123,255,0.95), rgba(102,16,242,0.9));
+    }
+    #mainNav .navbar-brand{
+      font-family: 'Balsamiq Sans', cursive;
+      letter-spacing:0.4px;
+      color:#fff;
+    }
+
+    /* Hero */
+    .hero{
+      min-height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg, #ffffff 0%, #f1f6ff 100%);
+      padding:60px 0;
+      text-align:center;
+    }
+    .hero h1{
+      font-size:2.6rem;
+      margin-bottom:0.3rem;
+    }
+    .hero p.lead{
+      margin-bottom:1.2rem;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+    .btn-primary {
+      background:var(--accent);
+      border-color:var(--accent);
+    }
+
+    /* About */
+    .about .profile-img{
+      max-width:320px;
+      width:100%;
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* Expertise cards */
+    .services .card{
+      border:none;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    /* Skills list */
+    .skill-item{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0.6rem 1rem;
+    }
+
+    /* Contact */
+    .contact form input, .contact form textarea{
+      border-radius:6px;
+      border:1px solid #e0e0e0;
+      padding:0.8rem;
+      width:100%;
+    }
+
+    /* Footer */
+    footer.foot{
+      background:#0f1724;
+      color:#c9d1d9;
+      padding:40px 0;
+      margin-top:40px;
+    }
+    footer.foot a { color:#c9d1d9; }
+    .social a{ margin-right:12px; color:#fff; font-size:18px; opacity:0.95; }
+
+    /* Responsive tweaks */
+    @media (max-width:767px){
+      .hero h1{font-size:1.9rem}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">Sucheta Mondal</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAlt"
+        aria-controls="navbarNavAlt" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff"><i class="fa fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAlt">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero" role="banner" aria-labelledby="hero-heading">
+    <div class="container">
+      <h1 id="hero-heading" data-aos="fade-right">Hi — I'm Sucheta Mondal</h1>
+      <p class="lead" data-aos="fade-up">Tech-Enthusiast,UI/UX Designer & Front-End Developer focused on producing accessible,
+        responsive, and beautiful web experiences.</p>
+      <div data-aos="zoom-in">
+        <a href="#contact" class="btn btn-outline-secondary">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-center" data-aos="fade-right">
+          <!-- Replace with real photo -->
+          <img src="sm.png" alt="Portrait of Sucheta Mondal" class="profile-img">
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <h2>About Me</h2>
+          <h5 class="text-muted">Tech-Enthusiast,UI/UX Designer & Front-End Developer</h5>
+          <p>
+            Hello — I'm <strong>Sucheta Mondal</strong>.I choose to follow my passion for technology. I design & enjoy turning
+             real world challenges to reality.My toolkit includes HTML, C, C++, AI ,Git & GitHub and I’m learning Python and modern front-end workflows.
+             I am also gaining knowledges in the Entrepreneurship world which includes from prototyping to set-up start-ups. 
+          </p>
+          <p>
+            I am a first year <em>Computer Science</em> B Tech student and work on projects
+            and personal experiments in web front-end development .
+          </p>
+
+          <div class="mt-3">
+            <a class="btn btn-primary mr-2" href="#projects">See Work</a>
+            <a class="btn btn-outline-secondary" href="#contact">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <div class="row">
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="50">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="fa fa-pencil-square-o fa-2x mb-3" aria-hidden="true"></i>
+              <h5 class="card-title">UI / UX Design</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="fa fa-code fa-2x mb-3" aria-hidden="true"></i>
+              <h5 class="card-title">Front-End Development</h5>
+              <p class="card-text">HTML, C , C++ ,Python — building responsive sites that match design intent and perform well.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="150">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="fa fa-mobile fa-2x mb-3" aria-hidden="true"></i>
+              <h5 class="card-title">Accessibility & Performance</h5>
+              <p class="card-text">Ensuring interfaces are accessible (a11y) and optimized for speed on all devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <h3>Skills</h3>
+          <p class="text-muted">A few technologies and tools I use frequently.</p>
+
+          <ul class="list-group">
+            <li class="list-group-item skill-item"><span>HTML</span><span>Advanced</span></li>
+            <li class="list-group-item skill-item"><span>C</span><span>Intermediate</span></li>
+            <li class="list-group-item skill-item"><span>C++</span><span>Intermediate</span></li>
+            <li class="list-group-item skill-item"><span>Python</span><span>Beginner</span></li>
+            <li class="list-group-item skill-item"><span>Git & GitHub</span><span>Intermediate</span></li>
+          </ul>
+        </div>
+  </section>
+
+      <div class="row">
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h4 class="text-muted">Contact</h4>
+        <h2>Get In Touch</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          
+          <form action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" class="form-control" required aria-required="true" placeholder="Your name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" class="form-control" required aria-required="true" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" class="form-control" required placeholder="Tell me about your project or question"></textarea>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <button type="submit" class="btn btn-primary mr-3">Send Message</button>
+              <div class="text-muted small">Or email me at <a href="mailto:suchetamonbol@gmail.com">suchetamonbol@gmail.com</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+          <h5 class="text-white mb-1">Sucheta Mondal</h5>
+          <div class="text-muted small">Tech-Enthusiast,UI/UX Designer & Front-End Developer</div>
+        </div>
+
+        <div class="col-md-4 text-center social">
+          <a href="https://github.com/Suchetamon27" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/sucheta-mondal-a31821383" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+        </div>
+
+        <div class="col-md-4 text-center text-md-right">
+          <small>&copy; <span id="year"></span> Sucheta Mondal. All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: jQuery, Popper, Bootstrap, AOS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 800, once: true });
+    // current year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
